@@ -10,7 +10,8 @@
 
                 <?php $slideritem = new WP_Query(array(
 
-                       'post_type'  => 'BoxSlide'
+                       'post_type'  => 'BoxSlide',
+
 
                 )); ?>
 
@@ -47,81 +48,43 @@
               </h1>
             </div>
             <ul class="unstyled row-fluid">
-              <li class="span3">
+
+
+              <?php 
+                   $box_service = new WP_Query(array(
+
+                        'post_type' => 'boxServices',
+                        'post_per_page' => 9
+
+                   ));
+               ?>
+
+              <?php while($box_service->have_posts()) : $box_service->the_post(); ?>
+
+                  <li class="span3">
                 <div class="round-box round-medium">
                   <span class="box-inner">
-                    <img alt="some image" class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/landscapes/landscape-2-a-300x300.jpg">
+                    <img class="img-circle" src="<?php the_post_thumbnail() ?> ">
                     <i class="icon-heart"></i>
                   </span>
                 </div>
                 <h3 class="text-center">
-                  Web Applications
+                  <?php the_title(); ?>
                 </h3>
-                <p>
-                  Nam vitae ligula eu mi molestie fringilla sed ac massa. Quisque justo metus, commodo eu viverra quis, volutpat et urna.
-                </p>
+                <p><?php the_content(); ?></p>
                 <a class="more-link" href="services.html">
                   <strong>
                     Read
                   </strong>
                   More
                 </a>
-              </li>
-              <li class="span3">
-                <div class="round-box round-medium">
-                  <span class="box-inner">
-                    <img alt="some image" class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/landscapes/landscape-2-b-300x300.jpg">
-                    <i class="icon-aws"></i>
-                  </span>
-                </div>
-                <h3 class="text-center">Cloud Hosting</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="more-link" href="services.html">
-                  <strong>
-                    Read
-                  </strong>
-                  More
-                </a>
-              </li>
-              <li class="span3">
-                <div class="round-box round-medium">
-                  <span class="box-inner">
-                    <img alt="some image" class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/landscapes/landscape-2-c-300x300.jpg">
-                    <i class="icon-apple"></i>
-                  </span>
-                </div>
-                <h3 class="text-center">Social apps</h3>
-                <p>
-                  Sed rhoncus leo eget elit tincidunt vestibulum nec ac urna. Aliquam lobortis odio in felis ultricies bibendum sunt in culpa qui.
-                </p>
-                <a class="more-link" href="services.html">
-                  <strong>
-                    Read
-                  </strong>
-                  More
-                </a>
-              </li>
-              <li class="span3">
-                <div class="round-box round-medium">
-                  <span class="box-inner">
-                    <img alt="some image" class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/landscapes/landscape-2-d-300x300.jpg">
-                    <i class="icon-cog"></i>
-                  </span>
-                </div>
-                <h3 class="text-center">Smart design</h3>
-                <p>
-                  Phasellus turpis metus, aliquam a facilisis nec, aliquet et elit. Suspendisse fermentum mattis dolor ut tristique nibh sapien mollis.
-                </p>
-                <a class="more-link" href="services.html">
-                  <strong>
-                    Read
-                  </strong>
-                  More
-                </a>
-              </li>
+                  </li>
+
+              <?php endwhile; ?>  
+
+
+
+   
             </ul>
           </div>
         </div>
@@ -139,14 +102,15 @@
             <div class="span6">
               <div class="flexslider margin-bottom" data-flex-directions="hide" data-flex-speed="10000" id="work">
                 <ul class="slides">
+
                   <li>
-                    <img alt="some image" src="images/assets/devices/imac-2.png">
+                    <img alt="some image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/devices/imac-2.png">
                   </li>
                   <li>
-                    <img alt="some image" src="images/assets/devices/macbook.png">
+                    <img alt="some image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/devices/macbook.png">
                   </li>
                   <li>
-                    <img alt="some image" src="images/assets/devices/ipad.png">
+                    <img alt="some image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/assets/devices/ipad.png">
                   </li>
                 </ul>
               </div>
@@ -223,80 +187,45 @@
             </h1>
           </div>
           <ul class="unstyled row-fluid">
-            <li class="span4">
-              <div class="row-fluid">
-                <div class="span4">
-                  <div class="round-box box-small">
-                    <a class="box-inner" href="post.html">
-                      <img alt="some image" class="img-circle" src="images/assets/landscapes/landscape-3-300x300.jpg">
-                    </a>
-                  </div>
-                  <h5 class="text-center light">
-                    12 dec 2012
-                  </h5>
-                </div>
-                <div class="span8">
-                  <h3>
-                    <a href="post.html">
-                      A normal post
-                    </a>
-                  </h3>
-                  <p>
-                    Curabitur euismod ultrices purus eget vehicula. Cras interdum est sed dui congue imperdiet.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="span4">
-              <div class="row-fluid">
-                <div class="span4">
-                  <div class="round-box box-small">
-                    <a class="box-inner" href="post.html">
-                      <img alt="some image" class="img-circle" src="images/assets/landscapes/landscape-1-300x300.jpg">
-                      <i class="icon-link"></i>
-                    </a>
-                  </div>
-                  <h5 class="text-center light">
-                    10 dec 2012
-                  </h5>
-                </div>
-                <div class="span8">
-                  <h3>
-                    <a href="post.html">
-                      Link post
-                    </a>
-                  </h3>
-                  <p>
-                    Donec viverra pulvinar ante, a placerat risus tincidunt vitae. Donec felis dolor, malesuada purus.
-                  </p>
+
+              <?php $frontPageBlog = new WP_Query(array(
+
+                       'post_type'      => 'front-page-blog',
+                       'post_per_page'  => 3
+
+                      
+                    ));?>
+
+            <?php while($frontPageBlog->have_posts()) : $frontPageBlog->the_post(); ?>
+              <li class="span4">
+                 <div class="row-fluid">
+                 <div class="span4">
+                   <div class="round-box box-small">
+                     <a class="box-inner" href="post.html">
+                       <img alt="some image" class="img-circle" src="<?php the_post_thumbnail();?>">
+                     </a>
+                   </div>
+                   <h5 class="text-center light">
+                     <?php the_time('DMY'); ?>
+                   </h5>
+                 </div>
+                 <div class="span8">
+                   <h3>
+                     <a href="post.html">
+                       <?php the_title(); ?>
+                     </a>
+                   </h3>
+                   <p>
+                      <?php the_content(); ?>
+                   </p>
                 </div>
               </div>
-            </li>
-            <li class="span4">
-              <div class="row-fluid">
-                <div class="span4">
-                  <div class="round-box box-small">
-                    <a class="box-inner" href="post.html">
-                      <img alt="some image" class="img-circle" src="images/assets/landscapes/landscape-2-e-300x300.jpg">
-                      <i class="icon-play"></i>
-                    </a>
-                  </div>
-                  <h5 class="text-center light">
-                    12 Nov 2012
-                  </h5>
-                </div>
-                <div class="span8">
-                  <h3>
-                    <a href="post.html">
-                      Video post
-                    </a>
-                  </h3>
-                  <p>
-                    Phasellus condimentum dapibus ligula vel dapibus. Praesent dictum aliquet pharetra magna.
-                  </p>
-                </div>
-              </div>
-            </li>
+             </li>                     
+           <?php endwhile; ?> 
+
+
+ 
+ 
           </ul>
         </div>
       </section>
@@ -311,56 +240,20 @@
           </div>
           <div class="flexslider fadein-links" data-flex-animation="slide" data-flex-controls="hide" data-flex-directions-position="outside" data-flex-directions-type="fancy" data-flex-itemwidth="250" data-flex-slideshow="false" id="client">
             <ul class="slides">
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client1.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client2.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client3.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client4.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client5.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client6.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client7.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client1.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client2.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img alt="client" src="images/assets/clients/client3.png">
-                </a>
-              </li>
+
+                  <?php $frontPageBlog = new WP_Query(array(
+
+                      'post_type'      => 'front-page-clints'
+                    ));?>
+ 
+                   <?php while($frontPageBlog->have_posts()) : $frontPageBlog->the_post(); ?>
+                   
+                    <li>
+                      <a href="#">
+                        <?php the_post_thumbnail();?>
+                      </a>
+                    </li>
+                   <?php endwhile; ?> 
             </ul>
           </div>
         </div>
