@@ -9,6 +9,19 @@ function smart_box(){
 add_theme_support('title-tag');
 add_theme_support('post-thumbnails');
 
+ 
+/*=============
+      navigation
+ ===========================================================*/
+
+
+	register_nav_menus(array(
+		'header_menu' => 'header menu',
+		'footer_menu' => 'My Custom Footer Menu',
+	) );
+
+ 
+
 
 
 /*=============
@@ -96,4 +109,49 @@ register_post_type('front-page-clints', array(
 }
 add_action('after_setup_theme', 'smart_box');
 
+ 
+
+
+/*=============
+      sidebar
+ ===========================================================*/
+
+ function blog_right_sideBar(){
+
+
+ 	register_sidebar( array(
+
+ 	'name'          =>'Right side bar',
+ 	'description'   =>'Add your right from here',
+ 	'id'            => 'right-sidebar',
+ 	'before_title'  =>'<h3 class="sidebar-header">',
+ 	'after_title'   => '</h3>',
+ 	'before_widget' =>' <div class="sidebar-widget">',
+ 	'after_widget'  =>'</div>'
+
+
+
+ 	) );
+
+
+ 	register_sidebar(array(
+      
+      'name'        => 'Footer',
+      'description' => 'Add Your Footer items frome here',
+      'id'          => 'box-footer',
+      'before_title'  =>'<h3 class="sidebar-header">',
+      'after_title'   => '</h3>',
+      'before_widget' =>'<div class="span6 small-screen-center">',
+ 	  'after_widget'  =>'</div>'
+
+ 	));
+
+ }
+ add_action('widgets_init', 'blog_right_sideBar');
+
+
+
+ /*=============
+      Footer
+ ===========================================================*/
  

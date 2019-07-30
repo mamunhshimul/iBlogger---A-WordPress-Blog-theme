@@ -46,99 +46,123 @@
                 Smart<span class="light">Box</span></a>
             </h1>
             <div class="nav-collapse collapse">
-              <ul class="nav pull-right">
-                <li class=""><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="pricing.html">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="docs.html">Docs</a>
-                    </li>
-                    <li>
-                      <a href="testimonials.html">Testimonials</a>
-                    </li>
-                    <li>
-                      <a href="404.html">404</a>
-                    </li>
-                    <li>
-                      <a href="sidebar-right.html">Right sidebar</a>
-                    </li>
-                    <li>
-                      <a href="sidebar-left.html">Left sidebar</a>
-                    </li>
-                    <li>
-                      <a href="fullbg.html">Full background</a>
-                    </li>
-                    <li>
-                      <a href="altpage.html">Alternative</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="typography.html">Typography</a>
-                    </li>
-                    <li>
-                      <a href="elements.html">Elements</a>
-                    </li>
-                    <li>
-                      <a href="icons.html">Icons</a>
-                    </li>
-                    <li>
-                      <a href="tables.html">Tables</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="blog.html">Normal blog</a>
-                    </li>
-                    <li>
-                      <a href="timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                      <a href="blog-fullwidth.html">Fullwidth blog</a>
-                    </li>
-                    <li>
-                      <a href="post.html">Single post</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="portfolio-3col.html">Three Columns</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-4col.html">Four Columns</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-item.html">Single Item</a>
-                    </li>
-                    <li>
-                      <a href="portfolio-3col-squared.html">Squared Portfolio</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class=""><a href="contact.html">Contact</a></li>
-              </ul>
+
+              
+ <?php 
+   $mamun = array(
+      'theme_location'  => 'header_menu',
+ 
+  
+      'menu_id'         => '',
+      'depth'           => '3',
+      'add_li_class'  => ' ',
+     'container'      => 'ul',
+     'menu_class'     => 'nav pull-right',   
+     
+    );
+ 
+      wp_nav_menu( $mamun );
+  ?>
+    
+
+
+         
+
+
+
+<!--               <ul class="nav pull-right">
+  <li class=""><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="about.html">About Us</a>
+      </li>
+      <li>
+        <a href="services.html">Services</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+      <li>
+        <a href="pricing.html">Pricing</a>
+      </li>
+      <li>
+        <a href="docs.html">Docs</a>
+      </li>
+      <li>
+        <a href="testimonials.html">Testimonials</a>
+      </li>
+      <li>
+        <a href="404.html">404</a>
+      </li>
+      <li>
+        <a href="sidebar-right.html">Right sidebar</a>
+      </li>
+      <li>
+        <a href="sidebar-left.html">Left sidebar</a>
+      </li>
+      <li>
+        <a href="fullbg.html">Full background</a>
+      </li>
+      <li>
+        <a href="altpage.html">Alternative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="typography.html">Typography</a>
+      </li>
+      <li>
+        <a href="elements.html">Elements</a>
+      </li>
+      <li>
+        <a href="icons.html">Icons</a>
+      </li>
+      <li>
+        <a href="tables.html">Tables</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="blog.html">Normal blog</a>
+      </li>
+      <li>
+        <a href="timeline.html">Timeline</a>
+      </li>
+      <li>
+        <a href="blog-fullwidth.html">Fullwidth blog</a>
+      </li>
+      <li>
+        <a href="post.html">Single post</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="portfolio-3col.html">Three Columns</a>
+      </li>
+      <li>
+        <a href="portfolio-4col.html">Four Columns</a>
+      </li>
+      <li>
+        <a href="portfolio-item.html">Single Item</a>
+      </li>
+      <li>
+        <a href="portfolio-3col-squared.html">Squared Portfolio</a>
+      </li>
+    </ul>
+  </li>
+  <li class=""><a href="contact.html">Contact</a></li>
+</ul> -->
             </div>
           </div>
         </div>

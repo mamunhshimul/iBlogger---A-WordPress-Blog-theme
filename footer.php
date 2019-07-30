@@ -4,6 +4,8 @@
       <div class="container-fluid">
         <div class="row-fluid">
           <div class="span6 small-screen-center">
+            
+            <?php dynamic_sidebar('box-footer'); ?>
             <h3>
               Smart
               <span class="light">
