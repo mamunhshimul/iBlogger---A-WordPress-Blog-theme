@@ -6,39 +6,9 @@
           <div class="span6 small-screen-center">
             
             <?php dynamic_sidebar('box-footer'); ?>
-            <h3>
-              Smart
-              <span class="light">
-                Box
-              </span>
-            </h3>
-            <p>
-              +44 1234 56.78.910  |  info@somecompany.com
-              <br>
-              Some St  777, 47000 Fancy town, Country.
-              <br>
-              &copy; Copyright 2013
-            </p>
+         
           </div>
-          <div class="span6">
-            <ul class="unstyled inline text-right small-screen-center big social-icons">
-              <li>
-                <a data-iconcolor="#00a0d1" href="#">
-                  <i class="icon-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a data-iconcolor="#3b5998" href="#">
-                  <i class="icon-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a data-iconcolor="#910101" href="#">
-                  <i class="icon-pinterest"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+   
         </div>
       </div>
     </div>

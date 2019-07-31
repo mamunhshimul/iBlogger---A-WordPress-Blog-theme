@@ -141,8 +141,8 @@ add_action('after_setup_theme', 'smart_box');
       'id'          => 'box-footer',
       'before_title'  =>'<h3 class="sidebar-header">',
       'after_title'   => '</h3>',
-      'before_widget' =>'<div class="span6 small-screen-center">',
- 	  'after_widget'  =>'</div>'
+      'before_widget' =>'<div class="span6 small-screen-center"<p>>',
+  	  'after_widget'  =>'</p></div>'
 
  	));
 
@@ -150,8 +150,8 @@ add_action('after_setup_theme', 'smart_box');
  add_action('widgets_init', 'blog_right_sideBar');
 
 
-
- /*=============
-      Footer
+/*=============
+      page navigation
  ===========================================================*/
+ 
  

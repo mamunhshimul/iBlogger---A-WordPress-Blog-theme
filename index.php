@@ -3,8 +3,6 @@
 
 
 
-
-
     <!-- Main Content -->
     <div id="content" role="main">
       <!-- Promo Section -->
@@ -99,26 +97,29 @@
  
               <div class="row-fluid">
                 <div class="pagination pagination-small pagination-centered offset2 span10">
+
+
                   <ul>
-                    <li class="disabled">
-                      <a href="#">
-                        <i class="icon-angle-left"></i>
-                      </a>
-                    </li>
-                    <li class="active">
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-angle-right"></i>
-                      </a>
-                    </li>
+                 <?php the_posts_pagination(array(
+
+                        'prev_text'=>'New Post',
+                        'next_text'=>'Old Post',
+                        'screen_reader_text'=>'deko jara',
+
+                    )); ?>
+
+
+ 
+
+<!--                     <li class="disabled">
+  <a href="#">
+    <i class="icon-angle-left"></i>
+  </a>
+</li>
+<li class="active">
+  <a href="#">1</a>
+</li> -->
+ 
                   </ul>
                 </div>
               </div>
