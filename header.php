@@ -14,22 +14,57 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="javascripts/PIE.js"></script>
   <![endif]-->
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/favicon.ico" rel="shortcut icon">
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="<?php echo get_stylesheet_directory_uri() ?>/stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css" />
+ 
+  
+<style type="text/css">
+  
+  <?php global $boX; 
+         echo  $boX['custom-css'];  
+   ?>
+
+    p{
+      color: <?php global $boX;  echo $boX['coloR'];  ?>;
+   }
+   
+   a{
+      color: <?php global $boX;  echo $boX['link-color']; ?>!important;
+   } 
+
+   body{
+
+      background-color: <?php global $boX; echo $boX['background-color']['background-color'];?>!important;
+      background-image:url(<?php global $boX; echo $boX['background-color']['background-image'];?>)!important;
+      background-repeat: <?php global $boX; echo $boX['background-color']['background-repeat'];?>!important;
+      background-position: <?php global $boX; echo $boX['background-color']['background-position'];?>!important;
+      background-size: <?php global $boX; echo $boX['background-color']['background-size'];?>!important;
+   }
+
+/*======menu border=============*/
+   .section-alt::before{ 
 
 
+    border-style: <?php global $boX; echo $boX['menu-border']['border-style'];?>!important;
+    border-width: <?php global $boX; echo $boX['menu-border']['border-top'];?>!important;
+    border-color: <?php global $boX; echo $boX['menu-border']['border-color'];?>!important;
 
-</head>
+    
+ 
+
+        
+   }
+ /*==========page header*/
+  #masthead .navbar-inner{
+    width:  <?php global $boX; echo $boX['nav_height']['width'];?>!important;
+    height:  <?php global $boX; echo $boX['nav_height']['height'];?>!important;
+  }
+  
+
+
+</style>         
+
 <?php wp_head(); ?>
+</head>
+
 
 <body class="body_class">
   <div class="wrapper">
@@ -44,8 +79,30 @@
               <span class="icon-bar"></span>
             </a>
             <h1 class="brand">
-              <a href="index-2.html">
-                Smart<span class="light">Box</span></a>
+              
+
+
+              <?php if($boX['logo-visivility'] == 1) : ?>
+
+                 <a href="<?php the_permalink(); ?>">
+
+                  <?php 
+                   global $boX;
+                   echo $boX['logoUpload'];
+                  ?>
+
+                  </a>
+
+                 <?php endif;?> 
+
+
+
+             
+
+<!--             <img src="<?php 
+ //                  global $boX;
+//                 echo $boX['logoUpload']['url'];
+   ?>">  -->
             </h1>
  
 

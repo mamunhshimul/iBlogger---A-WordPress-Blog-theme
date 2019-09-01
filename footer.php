@@ -1,4 +1,4 @@
-  <!-- Page Footer -->
+   <!-- Page Footer -->
   <footer id="footer" role="contentinfo">
     <div class="wrapper wrapper-transparent">
       <div class="container-fluid">
@@ -11,11 +11,12 @@
               </span>
             </h3>
             <p>
-              +44 1234 56.78.910  |  info@somecompany.com
-              <br>
-              Some St  777, 47000 Fancy town, Country.
-              <br>
-              &copy; Copyright 2013
+              <?php 
+
+                   global $boX;
+                   echo $boX['Copyright-field'];
+               ?>
+     
             </p>
           </div>
           <div class="span6">
