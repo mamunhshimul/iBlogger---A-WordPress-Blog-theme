@@ -13,10 +13,7 @@
       ); 
     add_theme_support( "custom-logo",$firezone_custom_logo_defult);
                                   
- 
-              
- 
-
+  
 
 
 /*-----------------
@@ -43,10 +40,9 @@ add_filter("protected_title_format","fire_prtected_title_change");
 
 
 
-function boxCssAndJs(){
+function firezone_assets(){
  
- 
-  wp_register_style('firezone', get_template_directory_uri().'/style.css');            wp_enqueue_style('firezone');
+  wp_enqueue_style( 'firezone',get_stylesheet_uri()); 
   wp_register_style('bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css');      wp_enqueue_style('bootstrap');
   wp_register_style('maincss', get_template_directory_uri().'/assets/css/style.css',null,time());    wp_enqueue_style('maincss');
   wp_register_style('shortcodes', get_template_directory_uri().'/assets/css/shortcodes.css');        wp_enqueue_style('shortcodes');
@@ -74,7 +70,7 @@ function boxCssAndJs(){
 
 }
 
-add_action('wp_enqueue_scripts','boxCssAndJs');
+add_action('wp_enqueue_scripts','firezone_assets');
 
 
  
