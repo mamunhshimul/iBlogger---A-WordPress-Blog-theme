@@ -1,64 +1,64 @@
-<?php get_header(); ?> 
-<?php get_template_part("hero"); ?>
+ <?php 
+
+    get_header();
+
+    get_template_part("/template-parts/hero");
 
 
- 
+  ?>
 
- 
- 
+
 <nav class="navbar yamm navbar-default" id="main-navigation">
-  <div class="container-fluid">
-  <div class="navbar-header">
-	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-  </div>
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
-  <li class="dropdown">
+<li class="dropdown">
 <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
-
-	<ul class   ="dropdown-menu" role="menu">
-		<li><a href ="index.html">Default</a></li>
-		<li><a href ="index-blog.html">Blog Layout</a></li>
-		<li><a href ="index-grid.html">Grid Layout</a></li>
-		<li><a href ="index-list.html">List Layout</a></li>
-	</ul>
-
-  </li>
-	<li><a href="index-grid.html">Fashion</a></li>
-	<li class="dropdown">
-	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <b class="caret"></b></a>
-	  <ul class="dropdown-menu" role="menu">
-		<li><a href="404.html">404 page</a></li>
-		<li><a href="shortcodes.html">Shortcodes</a></li>
-		<li><a href="post-video.html">Post with Video</a></li>
-		<li><a href="about.html">Full Width Page</a></li>
-		<li><a href="contact.html">Contact Form</a></li>
-	  </ul>
-	</li>
-	<li><a href="about.html">About</a></li>
-	<li><a href="contact.html">Contact</a></li>
+<ul class="dropdown-menu" role="menu">
+<li><a href="index.html">Default</a></li>
+<li><a href="index-blog.html">Blog Layout</a></li>
+<li><a href="index-grid.html">Grid Layout</a></li>
+<li><a href="index-list.html">List Layout</a></li>
+</ul>
+</li>
+<li><a href="index-grid.html">Fashion</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <b class="caret"></b></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="404.html">404 page</a></li>
+<li><a href="shortcodes.html">Shortcodes</a></li>
+<li><a href="post-video.html">Post with Video</a></li>
+<li><a href="about.html">Full Width Page</a></li>
+<li><a href="contact.html">Contact Form</a></li>
+</ul>
+</li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-	<li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
-		<div class="dropdown-menu searchbox" role="menu">
-			<form id="search" class="navbar-form search" role="search">
-				<div class="input-group">
-				<input type="search" class="form-control" placeholder="Type to search">
-				<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
-				</div>
-			</form>
-		</div>
-	</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
+<div class="dropdown-menu searchbox" role="menu">
+<form id="search" class="navbar-form search" role="search">
+<div class="input-group">
+<input type="search" class="form-control" placeholder="Type to search">
+<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
+</div>
+</form>
+</div>
+</li>
 </ul>
 </div>
-  </div>
-</nav> 
+</div>
+</nav>
 
 <div class="content">
 <div class="row">
@@ -68,7 +68,12 @@
 <div class="row">
 <div class="col-md-12">
 
-<article class="blog-post" <?php post_class(); ?>>
+
+
+ 
+ <?php while(have_posts()) : the_post(); ?>
+                  
+   <article class="blog-post">
 <div class="blog-post-container">
 <img src="images/demo/1200x800-17.jpg" alt="">
 </div>
@@ -76,51 +81,48 @@
 <div class="post-meta"><span class="post-category"><a href="#">Fashion</a></span></div>
 <div class="divider"></div>
 <h1><a href="portfolio-item.html">A Letter From An Old Graphic Designer To A Young Graphic Designer</a></h1>
-<div class="post-meta">Posted on <span class="post-time">February 23, 2015</span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
+<div class="post-meta">Posted on <span class="post-time"><?php the_time(); ?> </span> by <span class="post-author"><a href="post.html">Different Themes</a></span></div>
 <p>
-   <?php the_content(); ?>
-</p>
+ <?php the_content(); ?></p>
  
+<?php wp_link_pages( ); ?> 
+
+
 <div class="tag-cloud">
-<a href="#">Fashion</a>
-<a href="#">Design</a>
-<a href="#">Architecture</a>
-<a href="#">Gadgets</a>
-<a href="#">Cars</a>
-<a href="#">Computers</a>
+
+ <?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>" ,"</li></ul>"); ?> 
+ 
 </div>
 </div>
 </article>
-<div>
-  <?php next_post_link(); 
-        echo "<br/>";
-        previous_post_link();      
 
-    ?>
+ <?php endwhile; ?> 
 
-</div>
+
+
 
 
 <section>
-<h4 class="main-heading"><span>Author</span></h4>
-<div class="author">
-<div class="author-image">
-<img src="images/demo/300x300-4.jpg" alt="">
-</div>
-<div class="author-text-body">
-<h3><a href="index-list.html">Different Themes</a> <span>Editor in chief</span></h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium. Adipisci accusamus accusantium. Adipisci accusamus accusantium.</p>
-<div class="author-social">
-<a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-<a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-<a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus"></i></a>
-<a href="https://tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
-<a href="#" target="_blank"><i class="fa fa-rss"></i></a>
-</div>
-</div>
-</div>
+	<h4 class="main-heading"><span>Author</span></h4>
+	<div class="author">
+	<div class="author-image">
+	<img src="images/demo/300x300-4.jpg" alt="">
+	</div>
+	<div class="author-text-body">
+	<h3><a href="index-list.html">Different Themes</a> <span><?php  the_author(); ?></span></h3>
+	<p><?php echo get_the_author_meta("description") ?></p>
+	
+	<div class="author-social">
+	<a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+	<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+	<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+	<a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+	<a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus"></i></a>
+	<a href="https://tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
+	<a href="#" target="_blank"><i class="fa fa-rss"></i></a>
+	</div>
+	</div>
+	</div>
 </section>
 
 <section>
@@ -207,7 +209,7 @@
 <li>
 <div class="comment">
 <div class="comment-author">
-<img src="images/demo/avatar.png" alt="Author">
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>images/demo/avatar.png" alt="Author">
 <a href="#" rel="external nofollow" class="comment-author-name">Amanda</a>
 <span class="comment-meta">March 17, 2015 at 18:45 AM</span>
 </div>
@@ -280,15 +282,15 @@
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>Instagram</span></h4>
 <ul class="widget-instagram">
-<li><a href="#" target="_self"><img src="images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
 </ul>
 </div>
 </div>
@@ -439,10 +441,34 @@
 </div>
 
 </div> 
-</div> 
+</div>  
 
-<?php get_footer() ?> 
+<div class="my-slider">
+ 
+</div>
 
 
+
+<?php 
+
+    $attachments = new Attachments('slider');
+
+    if ($attachments->exist()) {
+     	while ( $attachment = $attachments->get()) {?>
+     		 
+     		 <div>
+     		 	<?php echo  $attachments->image('large'); ?>
+     		 </div>
+
+     	<?php 	
+     	}
+
+     }  
+
+ ?> 
+<?php 
+
+  get_footer();
+ ?>
 
  

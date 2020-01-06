@@ -15,9 +15,14 @@
 </div>
 </div>
 <div class="footer-bottom">
+ 
+ 
 <i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br />
 Theme made by <a href="https://themeforest.net/user/different-themes/portfolio?ref=different-themes">Different Themes</a>
+ 
 </div>
+
+
 </footer>
 
 <script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/js/jquery-latest.min.js"></script>

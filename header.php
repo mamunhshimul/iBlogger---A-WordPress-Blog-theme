@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from firenze.different-themes.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2019 12:30:24 GMT -->
-<head>
+ <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">

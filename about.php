@@ -3,7 +3,7 @@
  Template Name: About
  */ 
    get_header();
-   get_template_part('hero');
+   get_template_part("/template-parts/hero");  
 
   ?>
 

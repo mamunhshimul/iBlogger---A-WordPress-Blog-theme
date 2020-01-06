@@ -1,12 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); 
+  get_template_part("/template-parts/hero"); 
+ ?> 
 
-<?php get_template_part("hero"); ?>
- 
-
- 
-
- 
- 
 <nav class="navbar yamm navbar-default" id="main-navigation">
   <div class="container-fluid">
   <div class="navbar-header">
@@ -44,17 +39,30 @@
 	<li><a href="about.html">About</a></li>
 	<li><a href="contact.html">Contact</a></li>
 </ul>
+
+<div>
+	 
+ 
+
+ <?php 	
+  echo   get_search_form(); 
+
+
+  get_search_query();
+ ?>
+
+</div>
 <ul class="nav navbar-nav navbar-right">
 	<li class="dropdown">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
-		<div class="dropdown-menu searchbox" role="menu">
+<!-- 		<div class="dropdown-menu searchbox" role="menu">
 			<form id="search" class="navbar-form search" role="search">
 				<div class="input-group">
 				<input type="search" class="form-control" placeholder="Type to search">
 				<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
 				</div>
 			</form>
-		</div>
+		</div> -->
 	</li>
 </ul>
 </div>
@@ -67,7 +75,7 @@
 <div class="col-sm-12 col-md-8 slider-left">
 <div class="slider-item">
 <figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-20.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-20.jpg" alt="img11" />
 <figcaption>
 <h2>Wine Packaging Inspired by <span>the Simpsons and Piet Mondrian</span> Goes Against the Packaging Norms</h2>
 <p>Jodi started making these beautiful book sculptures when she got hooked from folding one of the pages of a used book from a second-hand book shop.</p>
@@ -81,7 +89,7 @@
 <div class="col-xs-12">
 <div class="slider-item rightside">
 <figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-14.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-14.jpg" alt="img11" />
 <figcaption>
 <h2>Make Stories Come Alive with <span>Jodi Harvey-Brown</span> Book Sculpture</h2>
 <p>Maybe it's wine or maybe not but one thing is for sure, combining Homer and ...</p>
@@ -93,7 +101,7 @@
 <div class="col-xs-12">
 <div class="slider-item rightside">
 <figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-21.jpg" alt="img11" />
+<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-21.jpg" alt="img11" />
 <figcaption>
 <h2>You! Be Inspired! - The Enchanting Art of Meg Hunt</h2>
 <p>Milo went to the woods. He took a fun ride and never came back.</p>
@@ -122,7 +130,7 @@
 <div class="col-sm-12">
 <div class="blog-post">
 <div class="blog-post-container">
-<a href="<a href="<?php the_permalink(); ?>"> 
+<a href="<?php the_permalink(); ?>"> 
    <?php 
        if (has_post_thumbnail()) {
           the_post_thumbnail('large', " ");
@@ -132,12 +140,12 @@
 </div>
 <div class="blog-post-body">
 <div class="post-meta"><span class="post-category">
+           <?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>" ); ?>
 
-  <a href="#"><?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>"); ?></a></span>
-</div>
+ </div>
 <div class="divider"></div>
 <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-<div class="post-meta">Posted on <span class="post-time"><?php the_date(); ?></span> by <span class="post-author"><a href="<?php the_permalink(); ?>"><?php the_author();?></a></span></div>
+<div class="post-meta">Posted on <span class="post-time"><?php the_date(); ?></span> by <span class="post-author"><a href="<?php the_permalink(); ?>"><?php the_author_posts_link();?></a></span></div>
 <p>
   <?php 
        if (is_single()) {
@@ -150,7 +158,7 @@
    ?> 
 </p>
 <p>
-<div class="more-button"><a href="post.html"><span class="read-more-button">READ MORE</span></a></div>
+<div class="more-button"><a href="<?php the_permalink(); ?>"><span class="read-more-button">READ MORE</span></a></div>
 <div class="wcircle-menu-button">
 <div class="wcircle-icon">
 <div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
@@ -183,7 +191,7 @@
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-17.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-17.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Beauty</a></div>
 </div>
 <div class="post-meta">
@@ -202,7 +210,7 @@
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-11.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-11.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Fashion</a></div>
 </div>
 <div class="post-meta">
@@ -217,13 +225,11 @@
 </div>
 
 </div>
-</div>
-<div class="row">
 <div class="col-md-6">
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-9.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-9.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Computers</a></div>
 </div>
 <div class="post-meta">
@@ -242,7 +248,7 @@
 
 <div class="grid-post">
 <div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/1200x800-19.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-19.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Transport</a></div>
 </div>
 <div class="post-meta">
@@ -258,6 +264,7 @@
 
 </div>
 </div>
+ 
 </section>
 
 
@@ -266,7 +273,7 @@
 
 <div class="list-post">
 <div class="list-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Transport</a></div>
 </div>
 <div class="list-post-body">
@@ -284,7 +291,7 @@
 
 <div class="list-post">
 <div class="list-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt=""></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt=""></a>
 <div class="post-cats"><a href="#">Design</a></div>
 </div>
 <div class="list-post-body">
@@ -304,12 +311,14 @@
 </div>
 <div class="col-md-4">
 
-<div id="sidebar">
+<div id="sidebar"> 
+
+ 
 
 <div class="sidebar-module">
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>About Us</span></h4>
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/about-me.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/about-me.jpg" alt="fashion" /></a>
 <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
 <a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a>
 </div>
@@ -372,15 +381,15 @@
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>Instagram</span></h4>
 <ul class="widget-instagram">
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
+<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
 </ul>
 </div>
 </div>
@@ -407,7 +416,7 @@
 <h4 class="sidebar-heading"><span>Fashion</span></h4>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Watch Top Brands and Agencies Live-Tweet</a></h3>
@@ -416,7 +425,7 @@
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">The Influences of Modern Minimalism</a></h3>
@@ -425,7 +434,7 @@
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-7.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-7.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Coors Light Gets New Look, Miller Lite Targets Biculturals</a></h3>
@@ -434,7 +443,7 @@
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
- <a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt="fashion" /></a>
+ <a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Facebook to Start Telling Brands Who's Talking About What Topics</a></h3>
@@ -443,7 +452,7 @@
 </div>
 <div class="widget-post">
 <div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt="fashion" /></a>
+<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt="fashion" /></a>
 </div>
 <div class="widget-post-entry">
 <h3 class="widget-post-title"><a href="post.html">Notegraphy, Graphic Design Meet Note-Taking</a></h3>
@@ -498,7 +507,7 @@
 <div class="sidebar-content">
 <h4 class="sidebar-heading"><span>Advertisement</span></h4>
 <div class="sidebar-content banner-widget">
-<a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/banner-300x250.png" alt="advertisement" width="300" height="250" /></a>
+<a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/banner-300x250.png" alt="advertisement" width="300" height="250" /></a>
 </div>
 </div>
 </div>
@@ -515,22 +524,39 @@
  <h4 class="main-heading"><span>Instagram</span></h4>
 <div class="widget-insta">
 <div id="insta-owl" class="owl-carousel owl-theme">
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-1.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-4.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/images/demo/article-298x298-1.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-2.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-4.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-5.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt=""></a></div>
+<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt=""></a></div>
 </div>
 </div>
 
 </div> 
 </div> 
+
+
+
+ 
+<?php 	
+
+$placeholder_text = get_post_meta( get_the_ID(),'placeholder',  true );
+$button_value     = get_post_meta( get_the_ID(),'button value',  true );
+$input_hint       = get_post_meta( get_the_ID(),'hint',  true );
+
+ ?>
+
+ <form >
+   <input type="email"   placeholder="<?php echo esc_attr($placeholder_text); ?>">
+   <input type="submit" value="<?php echo esc_attr($button_value); ?>">
+   <p><?php echo esc_html($input_hint); ?> </p>
+</form>
  
  <?php get_footer();?>
