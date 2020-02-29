@@ -1,562 +1,596 @@
-<?php get_header(); 
-  get_template_part("/template-parts/hero"); 
- ?> 
+<?php get_header( ); ?>
+    <!-- Slider-->
+    <div class="container">
+      <div class="slider-call blog-post blog-slider blog-post tahreer-slider-one mt-5 mt-md-6 mb-6" data-slick="{&quot;slidesToShow&quot;: 1, infinite&quot;:false,&quot; arrows&quot;:true,&quot;dots&quot;:true">
+        <article>
+          <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/3.jpg" alt="Entry Image"?>></div>
+          <div class="entry-content-wrapper">
+            <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            </div>
+            <h2 class="entry-title"><a href="blog-single-post.html">Raise your design from the dead with army of Ipsum</a></h2>
+            <div class="entry-content">
+              <p>Suspendisse viverra massam eget nibhe ultricies mollis. Donec sed lorem tincidunt, ultrices, euismod sem. Mauris nec tincidunt diam consectetur.</p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/2.jpg" alt="Entry Image"?>></div>
+          <div class="entry-content-wrapper">
+            <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            </div>
+            <h2 class="entry-title"><a href="blog-single-post.html">The classic latin passage that just never gets old</a></h2>
+            <div class="entry-content">
+              <p>Suspendisse viverra massam eget nibhe ultricies mollis. Donec sed lorem tincidunt, ultrices, euismod sem. Mauris nec tincidunt diam consectetur.</p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/1.jpg" alt="Entry Image"?>></div>
+          <div class="entry-content-wrapper">
+            <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            </div>
+            <h2 class="entry-title"><a href="blog-single-post.html">Aenean mattis tortor sapien ac congue molestie</a></h2>
+            <div class="entry-content">
+              <p>Suspendisse viverra massam eget nibhe ultricies mollis. Donec sed lorem tincidunt, ultrices, euismod sem. Mauris nec tincidunt diam consectetur.</p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/4.jpg" alt="Entry Image"?>></div>
+          <div class="entry-content-wrapper">
+            <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            </div>
+            <h2 class="entry-title"><a href="blog-single-post.html">Aenean mattis tortor sapien ac congue molestie</a></h2>
+            <div class="entry-content">
+              <p>Suspendisse viverra massam eget nibhe ultricies mollis. Donec sed lorem tincidunt, ultrices, euismod sem. Mauris nec tincidunt diam consectetur.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- End Slider-->
+    <!-- Editors' Picks-->
+    <div class="container">
+      <h6 class="text-orange mb-4">Editors' Picks</h6>
+      <!-- Blog-->
+      <div class="row blog-post">
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/5-lqip.jpg" data-src="assets/images/home-1/5.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Quid enim mihi potest esse optatius quam cum</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/6-lqip.jpg" data-src="assets/images/home-1/6.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Num igitur utiliorem tibi huncm esse posse</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/7-lqip.jpg" data-src="assets/images/home-1/7.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum motum sensus hilaretur</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/8-lqip.jpg" data-src="assets/images/home-1/8.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Curabitur pretium lectusnc ine fermentum fermen</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- End Blog-->
+    </div>
+    <!-- Popular-->
+    <div class="container">
+      <hr class="mt-0 mb-5">
+      <div class="row">
+        <div class="col-xl-8 mb-6">
+          <h6 class="text-red mb-4">Most discussed</h6>
+          <!-- Blog-->
+          <div class="row blog-post">
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/10-lqip.jpg" data-src="assets/images/home-1/10.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Suspendisse viverra massa eget nibh ultricies mollis</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/9-lqip.jpg" data-src="assets/images/home-1/9.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Etiam commodo eros non erat tristique congue</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/11-lqip.jpg" data-src="assets/images/home-1/11.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Pellentesque ipsum magna neu ultrices vitae rutrum</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/12-lqip.jpg" data-src="assets/images/home-1/12.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Aenean mattis tortor ac sapien congue molestie.</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/13-lqip.jpg" data-src="assets/images/home-1/13.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Pellentesque ipsum magna neu ultrices vitae rutrum</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article>
+                <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/14-lqip.jpg" data-src="assets/images/home-1/14.jpg" alt="Entry Image"?>/>
+                </figure>
+                <div class="entry-content-wrapper">
+                  <header class="entry-header">
+                    <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                    </div>
+                    <h2 class="entry-title"><a href="blog-single-post.html">Aenean mattis tortor ac sapien congue molestie.</a></h2>
+                  </header>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- End Blog-->
+          <div class="text-center align-items-center"><a class="btn btn-light" href="#">View More</a></div>
+        </div>
+        <div class="col-xl-4 mb-6">
+          <h6 class="text-purple mb-4">Most Read</h6>
+          <ul class="simple-entry-list blog-post">
+            <li>
+              <div class="reveal-title">1</div>
+              <div class="entry-content-wrapper">
+                <h2 class="entry-title"><a href="blog-single-post.html">Aenean mattis tortor acsem sapien congue molestie.</a></h2>
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="reveal-title">2</div>
+              <div class="entry-content-wrapper">
+                <h2 class="entry-title"><a href="blog-single-post.html">Vestibulum ante ipsumnec primis orci faucibus luctus.</a></h2>
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="reveal-title">3</div>
+              <div class="entry-content-wrapper">
+                <h2 class="entry-title"><a href="blog-single-post.html">Sapien etiam eu odio vitae bibendum vitaenun lorem.</a></h2>
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="reveal-title">4</div>
+              <div class="entry-content-wrapper">
+                <h2 class="entry-title"><a href="blog-single-post.html">Etiam eu odio sapien posuere vitae vitae lorem.</a></h2>
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Ads-->
+    <div class="container mb-6"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/holder/ad2.png" alt=""></div>
+    <!-- Innovation & Tech-->
+    <div class="container">
+      <h6 class="text-dark-blue mb-4">Innovation & Tech</h6>
+      <!-- Blog-->
+      <div class="row blog-post">
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/15-lqip.jpg" data-src="assets/images/home-1/15.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Quid enim mihi potest esse optatius quam cum</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/16-lqip.jpg" data-src="assets/images/home-1/16.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Num igitur utiliorem tibi huncm esse posse</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/17-lqip.jpg" data-src="assets/images/home-1/17.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum motum sensus hilaretur</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/18-lqip.jpg" data-src="assets/images/home-1/18.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Curabitur pretium lectusnc ine fermentum fermen</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- End Blog-->
+    </div>
+    <!-- Arts & Entertainment-->
+    <div class="container">
+      <hr class="mt-0 mb-5">
+      <h6 class="text-red mb-4">Arts & Entertainment</h6>
+      <!-- Blog-->
+      <div class="row blog-post">
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/19-lqip.jpg" data-src="assets/images/home-1/19.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Quid enim mihi potest esse optatius quam cum</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/20-lqip.jpg" data-src="assets/images/home-1/20.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Num igitur utiliorem tibi huncm esse posse</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/21-lqip.jpg" data-src="assets/images/home-1/21.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum motum sensus hilaretur</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/22-lqip.jpg" data-src="assets/images/home-1/22.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Curabitur pretium lectusnc ine fermentum fermen</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- End Blog-->
+    </div>
+    <!-- Travel & Food-->
+    <div class="container">
+      <hr class="mt-0 mb-5">
+      <h6 class="text-green mb-4">Travel & Food</h6>
+      <!-- Blog-->
+      <div class="row blog-post">
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/28-lqip.jpg" data-src="assets/images/home-1/28.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Quid enim mihi potest esse optatius quam cum</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/30-lqip.jpg" data-src="assets/images/home-1/30.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Num igitur utiliorem tibi huncm esse posse</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/29-lqip.jpg" data-src="assets/images/home-1/29.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum motum sensus hilaretur</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article>
+            <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/31-lqip.jpg" data-src="assets/images/home-1/31.jpg" alt="Entry Image"?>/>
+            </figure>
+            <div class="entry-content-wrapper">
+              <header class="entry-header">
+                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                </div>
+                <h2 class="entry-title"><a href="blog-single-post.html">Curabitur pretium lectusnc ine fermentum fermen</a></h2>
+              </header>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- End Blog-->
+    </div>
+    <!-- Top Video-->
+    <div class="accent-bg-color mt-4 pt-8 pb-5">
+      <div class="container">
+        <h6 class="text-pink mb-4">Top Video</h6>
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Blog-->
+            <div class="row blog-post">
+              <div class="col-lg-6">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/23-lqip.jpg" data-src="assets/images/home-1/23.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Donec varius magna vitae velit consectetur efficitur</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/24-lqip.jpg" data-src="assets/images/home-1/24.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Eget porttitor lorem libero esse liberavisse possesodales</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/35-lqip.jpg" data-src="assets/images/home-1/35.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Donec varius magna vitae velit consectetur efficitur</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/36-lqip.jpg" data-src="assets/images/home-1/36.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Eget porttitor lorem libero esse liberavisse possesodales</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- End Blog-->
+          </div>
+          <div class="col-lg-4">
+            <!-- Blog-->
+            <div class="row blog-post blog-list-style">
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/25-lqip.jpg" data-src="assets/images/home-1/25.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Nulla volutpat aliquam velit aliquam is habemus</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/26-lqip.jpg" data-src="assets/images/home-1/26.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Consectetur adipiscing elit esse posse cursus modo</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/27-lqip.jpg" data-src="assets/images/home-1/27.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum mot um sensus hilaretur ali</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/32-lqip.jpg" data-src="assets/images/home-1/32.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Nulla volutpat aliquam velit aliquam is habemus</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/33-lqip.jpg" data-src="assets/images/home-1/33.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Humour</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Consectetur adipiscing elit esse posse cursus modo</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-12">
+                <article>
+                  <figure class="entry-media"><img class="lozad" src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/34-lqip.jpg" data-src="assets/images/home-1/34.jpg" alt="Entry Image"?>/>
+                  </figure>
+                  <div class="entry-content-wrapper">
+                    <header class="entry-header">
+                      <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+                      </div>
+                      <h2 class="entry-title"><a href="blog-single-post.html">Omnes enim iucundum mot um sensus hilaretur ali</a></h2>
+                    </header>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- End Blog-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe Box-->
+    <div class="bg-moss pt-8 pb-6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h3 class="mb-2">Subscribe Now</h3>
+            <p class="mb-35px">Oratio pertinax cu vix, id his aliquam habemus tractatos. Eu vis cursus modo officiis liberavisse persequeris.</p>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="input-group">
+              <input class="form-control" type="email" placeholder="Your email" required>
+              <div class="input-group-md-append">
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
-<nav class="navbar yamm navbar-default" id="main-navigation">
-  <div class="container-fluid">
-  <div class="navbar-header">
-	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-  </div>
-<div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav">
-  <li class="dropdown">
-<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
-
-	<ul class   ="dropdown-menu" role="menu">
-		<li><a href ="index.html">Default</a></li>
-		<li><a href ="index-blog.html">Blog Layout</a></li>
-		<li><a href ="index-grid.html">Grid Layout</a></li>
-		<li><a href ="index-list.html">List Layout</a></li>
-	</ul>
-
-  </li>
-	<li><a href="index-grid.html">Fashion</a></li>
-	<li class="dropdown">
-	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features <b class="caret"></b></a>
-	  <ul class="dropdown-menu" role="menu">
-		<li><a href="404.html">404 page</a></li>
-		<li><a href="shortcodes.html">Shortcodes</a></li>
-		<li><a href="post-video.html">Post with Video</a></li>
-		<li><a href="about.html">Full Width Page</a></li>
-		<li><a href="contact.html">Contact Form</a></li>
-	  </ul>
-	</li>
-	<li><a href="about.html">About</a></li>
-	<li><a href="contact.html">Contact</a></li>
-</ul>
-
-<div>
-	 
- 
-
- <?php 	
-  echo   get_search_form(); 
-
-
-  get_search_query();
- ?>
-
-</div>
-<ul class="nav navbar-nav navbar-right">
-	<li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-search"></i></a>
-<!-- 		<div class="dropdown-menu searchbox" role="menu">
-			<form id="search" class="navbar-form search" role="search">
-				<div class="input-group">
-				<input type="search" class="form-control" placeholder="Type to search">
-				<span class="input-group-btn"><button type="submit" class="btn btn-default btn-submit"><i class="fa fa-angle-right"></i></button></span>
-				</div>
-			</form>
-		</div> -->
-	</li>
-</ul>
-</div>
-  </div>
-</nav>  
-
-
-<div class="slider">
-<div class="row">
-<div class="col-sm-12 col-md-8 slider-left">
-<div class="slider-item">
-<figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-20.jpg" alt="img11" />
-<figcaption>
-<h2>Wine Packaging Inspired by <span>the Simpsons and Piet Mondrian</span> Goes Against the Packaging Norms</h2>
-<p>Jodi started making these beautiful book sculptures when she got hooked from folding one of the pages of a used book from a second-hand book shop.</p>
-<a href="post.html">View more</a>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="col-sm-12 col-md-4 slider-right">
-<div class="row">
-<div class="col-xs-12">
-<div class="slider-item rightside">
-<figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-14.jpg" alt="img11" />
-<figcaption>
-<h2>Make Stories Come Alive with <span>Jodi Harvey-Brown</span> Book Sculpture</h2>
-<p>Maybe it's wine or maybe not but one thing is for sure, combining Homer and ...</p>
-<a href="post.html">View more</a>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="col-xs-12">
-<div class="slider-item rightside">
-<figure class="effect-milo">
-<img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-21.jpg" alt="img11" />
-<figcaption>
-<h2>You! Be Inspired! - The Enchanting Art of Meg Hunt</h2>
-<p>Milo went to the woods. He took a fun ride and never came back.</p>
-<a href="post.html">View more</a>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="content">
-<div class="row">
-<div class="col-md-8 main-content">
-
-<section>
-
-
-<?php while(have_posts()) : the_post(); ?>
-                                    
-             
-
-<div class="row" <?php post_class(); ?>>
-<div class="col-sm-12">
-<div class="blog-post">
-<div class="blog-post-container">
-<a href="<?php the_permalink(); ?>"> 
-   <?php 
-       if (has_post_thumbnail()) {
-          the_post_thumbnail('large', " ");
-     }
- ?>
-</a>
-</div>
-<div class="blog-post-body">
-<div class="post-meta"><span class="post-category">
-           <?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>" ); ?>
-
- </div>
-<div class="divider"></div>
-<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-<div class="post-meta">Posted on <span class="post-time"><?php the_date(); ?></span> by <span class="post-author"><a href="<?php the_permalink(); ?>"><?php the_author_posts_link();?></a></span></div>
-<p>
-  <?php 
-       if (is_single()) {
-       	the_content();
-       }else{
-       	 the_excerpt();
-       } 
-
- 
-   ?> 
-</p>
-<p>
-<div class="more-button"><a href="<?php the_permalink(); ?>"><span class="read-more-button">READ MORE</span></a></div>
-<div class="wcircle-menu-button">
-<div class="wcircle-icon">
-<div class="wcircle-menu-icon"> <i class="fa fa-share-alt"></i> </div>
-</div>
-<div class="wcircle-menu" style="display:none;">
-<div class="wcircle-menu-item share-facebook"> <a href="post.html"><i class="fa fa-facebook"></i></a> </div>
-<div class="wcircle-menu-item share-youtube"> <a href="post.html"><i class="fa fa-youtube"></i></a> </div>
-<div class="wcircle-menu-item share-twitter"> <a href="post.html"><i class="fa fa-twitter"></i></a> </div>
-<div class="wcircle-menu-item share-google"> <a href="post.html"><i class="fa fa-google"></i></a> </div>
-<div class="wcircle-menu-item share-linkedin"> <a href="post.html"><i class="fa fa-linkedin"></i></a> </div>
-<div class="wcircle-menu-item share-pinterest"> <a href="post.html"><i class="fa fa-pinterest"></i></a> </div>
-<div class="wcircle-menu-item share-tumblr"> <a href="post.html"><i class="fa fa-tumblr"></i></a> </div>
-</div>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
- 
- 
-<?php endwhile; ?> 
- 
-</section>
-
-<section>
-<h4 class="main-heading"><span>Grid style</span></h4>
-<div class="row">
-<div class="col-md-6">
-
-<div class="grid-post">
-<div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-17.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Beauty</a></div>
-</div>
-<div class="post-meta">
-<span class="post-meta-publ-date">February 23, 2015</span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">32</a></span>
-</div>
-<div class="grid-post-body">
-<h3 class="title"><a href="portfolio-item.html">The Jaw-Droppingly Gorgeous Illustrations of Phil Noto</a></h3>
-<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-</div>
-<div class="col-md-6">
-
-<div class="grid-post">
-<div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-11.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Fashion</a></div>
-</div>
-<div class="post-meta">
-<span class="post-meta-publ-date">February 23, 2015</span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">32</a></span>
-</div>
-<div class="grid-post-body">
-<h3 class="title"><a href="portfolio-item.html">Featured Artist: Interview with Diorama Artist Clemens Wirth</a></h3>
-<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-</div>
-<div class="col-md-6">
-
-<div class="grid-post">
-<div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-9.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Computers</a></div>
-</div>
-<div class="post-meta">
-<span class="post-meta-publ-date">February 23, 2015</span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">32</a></span>
-</div>
-<div class="grid-post-body">
-<h3 class="title"><a href="portfolio-item.html">5 Infographics You Should Definitely Check Out</a></h3>
-<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-</div>
-<div class="col-md-6">
-
-<div class="grid-post">
-<div class="grid-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/1200x800-19.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Transport</a></div>
-</div>
-<div class="post-meta">
-<span class="post-meta-publ-date">February 23, 2015</span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">32</a></span>
-</div>
-<div class="grid-post-body">
-<h3 class="title"><a href="portfolio-item.html">Unbelievable Anamorphic Sculptures by Jonty Hurwitz</a></h3>
-<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-</div>
-</div>
- 
-</section>
-
-
-<section>
-<h4 class="main-heading"><span>List style</span></h4>
-
-<div class="list-post">
-<div class="list-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Transport</a></div>
-</div>
-<div class="list-post-body">
-<h2><a href="post.html">Unbelievable Anamorphic Sculptures by Jonty Hurwitz</a></h2>
-<div class="post-meta">
-<span class="post-meta-publ-date">February 23, 2015</span>
-<span class="post-meta-author">by <a href="#">Different Themes</a></span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">32</a></span>
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium. Adipisci accusamus accusantium. Adipisci accusamus accusantium.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-
-<div class="list-post">
-<div class="list-post-container">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt=""></a>
-<div class="post-cats"><a href="#">Design</a></div>
-</div>
-<div class="list-post-body">
-<h2><a href="post.html">Minimalist Monday: Classic Children's Stories Posters</a></h2>
-<div class="post-meta">
-<span class="post-meta-publ-date">March 6, 2015</span>
-<span class="post-meta-author">by <a href="#">John Doe</a></span>
-<span><i class="fa fa-comments"></i> <a href="#" rel="category tag">132</a></span>
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusamus accusantium. Adipisci accusamus accusantium. Adipisci accusamus accusantium.</p>
-<p><a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a></p>
-</div>
-</div>
-
-</section>
-
-</div>
-<div class="col-md-4">
-
-<div id="sidebar"> 
-
- 
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>About Us</span></h4>
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/about-me.jpg" alt="fashion" /></a>
-<p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-<a href="post.html" class="more-button"><span class="read-more-button">READ MORE</span></a>
-</div>
-</div>
-
-
-<div class="sidebar-module">
- <div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Latest</span></h4>
-<div class="widget-post" id="latest_posts">
-<div class="widget-post-circle">
-1
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Watch Top Brands and Agencies Live-Tweet</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i>15. MARCH 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>15</span></div>
-</div>
-</div>
-<div class="widget-post" id="latest_posts">
-<div class="widget-post-circle">
-2
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">The Influences of Modern Minimalism</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015</div>
-</div>
-</div>
-<div class="widget-post" id="latest_posts">
-<div class="widget-post-circle">
-3
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Coors Light Gets New Look, Miller Lite Targets Biculturals</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>3</span></div>
-</div>
-</div>
-<div class="widget-post" id="latest_posts">
-<div class="widget-post-circle">
-4
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Facebook to Start Telling Brands Who's Talking About What Topics</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>5</span></div>
-</div>
-</div>
-<div class="widget-post" id="latest_posts">
-<div class="widget-post-circle">
-5
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Notegraphy, Graphic Design Meet Note-Taking</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Instagram</span></h4>
-<ul class="widget-instagram">
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-4.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-<li><a href="#" target="_self"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt="Instagram Title" title="Instagram Title" /></a></li>
-</ul>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Social</span></h4>
-<div class="widget-social">
-<a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-<a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-<a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus"></i></a>
-<a href="https://tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
-<a href="#" target="_blank"><i class="fa fa-rss"></i></a>
-</div>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Fashion</span></h4>
-<div class="widget-post">
-<div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt="fashion" /></a>
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Watch Top Brands and Agencies Live-Tweet</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i>15. MARCH 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>11</span></div>
-</div>
-</div>
-<div class="widget-post">
-<div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt="fashion" /></a>
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">The Influences of Modern Minimalism</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>6</span></div>
-</div>
-</div>
-<div class="widget-post">
-<div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-7.jpg" alt="fashion" /></a>
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Coors Light Gets New Look, Miller Lite Targets Biculturals</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015</div>
-</div>
-</div>
-<div class="widget-post">
-<div class="widget-post-image">
- <a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt="fashion" /></a>
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Facebook to Start Telling Brands Who's Talking About What Topics</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015 <span class="widget-post-comments"><i class="fa fa-comments"></i>14</span></div>
-</div>
-</div>
-<div class="widget-post">
-<div class="widget-post-image">
-<a href="post.html"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt="fashion" /></a>
-</div>
-<div class="widget-post-entry">
-<h3 class="widget-post-title"><a href="post.html">Notegraphy, Graphic Design Meet Note-Taking</a></h3>
-<div class="widget-post-meta"><i class="fa fa-clock-o"></i> 15. JANUARY 2015</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Latest Comments</span></h4>
-<div class="lcomments-item">
-<a href="#">Mr. Wordpress</a> on <a href="post.html">Monotype Typecast, Stately Type and TDC Generator</a>
-</div>
-<div class="lcomments-item">
-<a href="#">Jeremy Clarkson</a> on <a href="post.html">Five centuries, but also the nation</a>
-</div>
-<div class="lcomments-item">
-<a href="#">John Doe</a> on <a href="post.html">12 Animated Magnets from Fictional Places</a>
-</div>
-<div class="lcomments-item">
-<a href="#">Claire</a> on <a href="post.html">Wonderful Pencil Drawings by Stefan</a>
-</div>
-<div class="lcomments-item">
-<a href="#">Sarah Lee</a> on <a href="post.html">Five centuries, but also the nation</a>
-</div>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Tag cloud</span></h4>
-<div class="tag-cloud">
-<a href="#">Fashion</a>
-<a href="#">Design</a>
-<a href="#">Architecture</a>
-<a href="#">Gadgets</a>
-<a href="#">Cars</a>
-<a href="#">Music</a>
-<a href="#">Recipe</a>
-<a href="#">Lifestyle</a>
-<a href="#">Travel</a>
-</div>
-</div>
-</div>
-
-
-<div class="sidebar-module">
-<div class="sidebar-content">
-<h4 class="sidebar-heading"><span>Advertisement</span></h4>
-<div class="sidebar-content banner-widget">
-<a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/banner-300x250.png" alt="advertisement" width="300" height="250" /></a>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
-<p id="back-top">
-<a href="#top"><i class="fa fa-angle-up"></i></a>
-</p>
-
- <h4 class="main-heading"><span>Instagram</span></h4>
-<div class="widget-insta">
-<div id="insta-owl" class="owl-carousel owl-theme">
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-1.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-4.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/300x300-6.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-5.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-3.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-2.jpg" alt=""></a></div>
-<div class="item"><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/demo/article-298x298-1.jpg" alt=""></a></div>
-</div>
-</div>
-
-</div> 
-</div> 
-
-
-
- 
-<?php 	
-
-$placeholder_text = get_post_meta( get_the_ID(),'placeholder',  true );
-$button_value     = get_post_meta( get_the_ID(),'button value',  true );
-$input_hint       = get_post_meta( get_the_ID(),'hint',  true );
-
- ?>
-
- <form >
-   <input type="email"   placeholder="<?php echo esc_attr($placeholder_text); ?>">
-   <input type="submit" value="<?php echo esc_attr($button_value); ?>">
-   <p><?php echo esc_html($input_hint); ?> </p>
-</form>
- 
- <?php get_footer();?>
+  <?php get_footer( ); ?>  
