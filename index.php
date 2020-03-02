@@ -2,10 +2,17 @@
     <!-- Slider-->
     <div class="container">
       <div class="slider-call blog-post blog-slider blog-post tahreer-slider-one mt-5 mt-md-6 mb-6" data-slick="{&quot;slidesToShow&quot;: 1, infinite&quot;:false,&quot; arrows&quot;:true,&quot;dots&quot;:true">
+       
+
         <article>
-          <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/3.jpg" alt="Entry Image"?>></div>
+          <div class="entry-media">
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/3.jpg" alt="Entry Image"?>>
+          </div>
           <div class="entry-content-wrapper">
-            <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span><span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
+            <div class="entry-meta-top">
+              <span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span>
+              <span class="entry-author"><i class="far fa-user"></i>Amjad Ali</span>
+              <span class="entry-meta-date"> <i class="far fa-clock"></i>April 13, 2020</span>
             </div>
             <h2 class="entry-title"><a href="blog-single-post.html">Raise your design from the dead with army of Ipsum</a></h2>
             <div class="entry-content">
@@ -13,6 +20,8 @@
             </div>
           </div>
         </article>
+ 
+
         <article>
           <div class="entry-media"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/home-1/2.jpg" alt="Entry Image"?>></div>
           <div class="entry-content-wrapper">

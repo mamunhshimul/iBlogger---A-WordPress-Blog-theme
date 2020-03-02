@@ -33,9 +33,14 @@
             </figure>
             <div class="entry-content-wrapper">
               <header class="entry-header">
-                <div class="entry-meta-top"><span class="entry-meta-category"><i class="far fa-folder"></i><a href="blog-three-col.html">Photography</a></span><span class="entry-meta-date"> <i class="far fa-clock"></i>NOV 11, 2020</span>
+                <div class="entry-meta-top">
+                  <span class="entry-meta-category">
+                    <i class="far fa-folder"></i>
+                    <a href="blog-three-col.html">Photography</a>
+                  </span>
+                  <span class="entry-meta-date"> <i class="far fa-clock"></i><?php the_time('M d, Y'); ?></span>
                 </div>
-                <h2 class="entry-title"><a href="blog-single-post.html"><?php the_title( ); ?></a></h2>
+                <h2 class="entry-title"><?php the_title(); ?></h2>
               </header>
               <div class="entry-content">
                 <p><?php the_content( ); ?></p>
