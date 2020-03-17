@@ -1,19 +1,10 @@
 <?php
 
 
-
- 
-
      load_theme_textdomain("firezone"); 
      add_theme_support("post-thumbnails"); 
      add_theme_support("title-tag");                                       
  
-
-
-
-
-
-
 
 
 
