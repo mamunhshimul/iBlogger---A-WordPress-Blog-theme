@@ -87,7 +87,11 @@
         </div><!-- Container /- -->
       </div><!-- Top Header /- -->
     </div><!-- SidePanel /- -->
-    
+
+
+
+<!-- mmm----------------------------mm -->    <!-- mmm----------------------------mm -->
+
     <!-- Menu Block -->
     <div class="menu-block">
       <!-- Container -->
@@ -101,10 +105,35 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index-2.html">hoary</a>
+            <a href="site_url();">
+             <?php 
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                 if ( has_custom_logo() ) {
+                      echo '<img src="' . esc_url( $logo) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                    } else {
+                      echo '<h1 class="navbar-brand">'. get_bloginfo( 'name' ) .'</h1>'; 
+                   } ?>
+               </a>  
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+
+
+          <div id="navbar" class="navbar-collapse collapse">  
+                    <?php 
+                      $iBlober_menu = array(
+                         'theme_location'  => 'header_menu',
+                         'container'       => 'ul',
+                         'container_class' => 'nav navbar-nav',   
+                         'container_id'    => false,  
+                         'menu_class'      => 'nav navbar-nav',  
+                         'menu_id'         => 'ole baba',   
+                         'depth'         => '3', 
+                         'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+                         'walker'          => new wp_bootstrap_navwalker() 
+                        );
+                        wp_nav_menu( $iBlober_menu );
+                       ?> 
+<!--             <ul class="nav navbar-nav">
               <li class="dropdown active">
                 <a href="index-2.html" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                 <i class="ddl-switch fa fa-angle-down"></i>
@@ -135,7 +164,8 @@
                 </ul>
               </li>
               <li><a href="contactus.html" title="Contact Us">Contact</a></li>
-            </ul>
+            </ul> -->
+
           </div>
           <div id="loginpanel" class="desktop-hide">
             <div class="right" id="toggle">

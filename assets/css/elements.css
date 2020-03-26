@@ -470,6 +470,13 @@
 	border: 15px solid #e8e8e8;
 	border-bottom: none;
 }
+.type-post .entry-cover > a img{
+ 
+	height: 300px;
+	object-fit: cover;
+	overflow: hidden;
+
+}
 .type-post .entry-cover .entry-meta {
 	position: absolute;
 	left: 0;

@@ -91,7 +91,7 @@
   <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/lib.js"></script>
   
   <!-- Library - Theme JS -->
-  <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/functions.js"></script>
+  <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/main.js"></script>
   
 
   <?php wp_footer(); ?>
