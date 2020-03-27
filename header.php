@@ -7,7 +7,7 @@
 
  
  <?php wp_head(); ?> 
-<head>
+<head <?php body_class();?>>
   <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,10 +107,9 @@
             </button>
             <a href="site_url();">
              <?php 
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                $custom_logo_id = get_theme_mod( 'custom_logo' ); 
                  if ( has_custom_logo() ) {
-                      echo '<img src="' . esc_url( $logo) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                      echo '<img src="' . esc_url( $custom_logo_id) . '" alt="' . get_bloginfo( 'name' ) . '">';
                     } else {
                       echo '<h1 class="navbar-brand">'. get_bloginfo( 'name' ) .'</h1>'; 
                    } ?>
@@ -118,7 +117,9 @@
           </div>
 
 
-          <div id="navbar" class="navbar-collapse collapse">  
+          <div id="navbar" class="navbar-collapse collapse">
+
+
                     <?php 
                       $iBlober_menu = array(
                          'theme_location'  => 'header_menu',
@@ -132,7 +133,7 @@
                          'walker'          => new wp_bootstrap_navwalker() 
                         );
                         wp_nav_menu( $iBlober_menu );
-                       ?> 
+  ?> 
 <!--             <ul class="nav navbar-nav">
               <li class="dropdown active">
                 <a href="index-2.html" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>

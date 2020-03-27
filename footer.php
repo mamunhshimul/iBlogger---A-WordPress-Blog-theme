@@ -12,6 +12,17 @@
           <!-- Widget About -->
           <div class="col-md-3 col-sm-6 col-xs-6">
             <aside class="widget widget_about">
+              
+              <?php if ( is_active_sidebar( 'foote-text-1' ) ) : ?>
+                      <?php dynamic_sidebar( 'foote-text-1' ); ?>
+              <?php endif; ?>
+            </aside>
+          </div>
+          <!--======================================================================= Widget About /- -->
+
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <aside class="widget widget_about">
               <a href="index-2.html"><img src="assets/images/logo.png" alt="Logo" /></a>
               <p>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. </p>
               <aside class="widget widget_social">

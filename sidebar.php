@@ -1,4 +1,12 @@
 						<div class="col-md-4 col-sm-5 col-xs-12 widget-area widget-space">
+
+
+ 
+							<?php if ( is_active_sidebar( 'iBlogger_About-me' ) ) : ?>
+					    	    	<?php dynamic_sidebar( 'iBlogger_About-me' ); ?>
+							<?php endif; ?>
+
+
 							<!-- Widget : About Me -->
 							<aside class="widget widget_aboutme">
 								<div class="aboutme-box">
@@ -157,3 +165,6 @@
 								</div>
 							</aside><!-- Widget : Tag Cloud -->
 						</div>
+
+
+
