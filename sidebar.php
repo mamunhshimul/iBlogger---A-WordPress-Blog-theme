@@ -2,8 +2,8 @@
 
 
  
-							<?php if ( is_active_sidebar( 'iBlogger_About-me' ) ) : ?>
-					    	    	<?php dynamic_sidebar( 'iBlogger_About-me' ); ?>
+							<?php if ( is_active_sidebar( '' ) ) : ?>
+					    	    	<?php dynamic_sidebar( '' ); ?>
 							<?php endif; ?>
 
 
