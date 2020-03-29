@@ -11,12 +11,29 @@
         <div class="row">
           <!-- Widget About -->
           <div class="col-md-3 col-sm-6 col-xs-6">
-            <aside class="widget widget_about">
-              
+           
               <?php if ( is_active_sidebar( 'foote-text-1' ) ) : ?>
                       <?php dynamic_sidebar( 'foote-text-1' ); ?>
-              <?php endif; ?>
-            </aside>
+              <?php endif; ?> 
+
+          </div>
+          <!-- Widget About -->
+          <div class="col-md-3 col-sm-6 col-xs-6">  
+              <?php if ( is_active_sidebar( 'foote-text-2' ) ) : ?>
+                      <?php dynamic_sidebar( 'foote-text-2' ); ?>
+              <?php endif; ?> 
+          </div>
+          <!-- Widget About -->
+          <div class="col-md-3 col-sm-6 col-xs-6"> 
+              <?php if ( is_active_sidebar( 'foote-text-3' ) ) : ?>
+                   <?php dynamic_sidebar( 'foote-text-3' ); ?>   
+              <?php endif; ?> 
+          </div>
+          <!-- Widget About -->
+          <div class="col-md-3 col-sm-6 col-xs-6"> 
+              <?php if ( is_active_sidebar( 'foote-text-4' ) ) : ?>
+                      <?php dynamic_sidebar( 'foote-text-4' ); ?>
+              <?php endif; ?> 
           </div>
           <!--======================================================================= Widget About /- -->
 
