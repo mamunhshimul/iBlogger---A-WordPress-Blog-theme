@@ -38,7 +38,7 @@
           <!--======================================================================= Widget About /- -->
 
 
-          <div class="col-md-3 col-sm-6 col-xs-6">
+<!--           <div class="col-md-3 col-sm-6 col-xs-6">
             <aside class="widget widget_about">
               <a href="index-2.html"><img src="assets/images/logo.png" alt="Logo" /></a>
               <p>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. </p>
@@ -51,10 +51,10 @@
                 </ul>
               </aside>
             </aside>
-          </div><!-- Widget About /- -->
+          </div> --><!-- Widget About /- -->
           
           <!-- Widget : Popular Post -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
+<!--           <div class="col-md-3 col-sm-6 col-xs-6">
             <aside class="widget widget_latestposts">
               <h3 class="widget-title">Popular Posts</h3>
               <div class="latest-content">
@@ -68,10 +68,10 @@
                 <h5><a title="Collaboratively scale ethical total linkage " href="#">Collaboratively scale ethical total linkage </a></h5>
               </div>
             </aside>
-          </div><!-- Widget : Popular Post /- -->
+          </div> --><!-- Widget : Popular Post /- -->
           
           <!-- Widget : Twitter -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
+<!--           <div class="col-md-3 col-sm-6 col-xs-6">
             <aside class="widget widget_twitter">
               <h3 class="widget-title">Tweet</h3>
               <div class="tweet-box">
@@ -83,10 +83,10 @@
                 <span>3 hoursago</span>
               </div>
             </aside>
-          </div><!-- Widget : Twitter -->
+          </div> --><!-- Widget : Twitter -->
           
           <!-- Widget : Flickr -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
+<!--           <div class="col-md-3 col-sm-6 col-xs-6">
             <aside class="widget widget_flickr">
               <h3 class="widget-title">flickr PHOTO</h3>
               <ul>
@@ -98,7 +98,7 @@
                 <li><a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/ftr-flickr-6.jpg" alt="Flickr" /></a></li>
               </ul>
             </aside>
-          </div><!-- Widget : Flickr /- -->
+          </div> --><!-- Widget : Flickr /- -->
           
         </div><!-- Row /- -->
       </div><!-- Container /- -->
@@ -107,19 +107,17 @@
     <div class="container-fluid bottom-footer no-left-padding no-right-padding">
       <!-- Container -->
       <div class="container">
-        <p>Copyright &copy; 2017 Hoary HTML Template Design</p>
+        <p>Copyright &copy; 2020 <a href="mamunu.info" target="_blank">mamunhshimul</a> HTML Template Design</p>
       </div><!-- Container -->
     </div><!-- Bottom Footer /- -->
   </footer><!-- Footer Main /- -->
   
   <!-- JQuery v1.12.4 -->
-    <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/jquery-1.12.4.min.js"></script>  
+ 
 
   <!-- Library - Js -->
-  <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/lib.js"></script>
-  
-  <!-- Library - Theme JS -->
-  <script src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/js/main.js"></script>
+ 
+ 
   
 
   <?php wp_footer(); ?>

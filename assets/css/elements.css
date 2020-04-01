@@ -176,8 +176,15 @@
 	font-size: 18px;
 }
 .top-footer .widget {
-	margin-bottom: 40px;
-}
+	margin-bottom: 40px; 
+	color: #d9d9d9;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 1.4px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+} 
 .top-footer .widget-title {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;

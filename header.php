@@ -21,26 +21,6 @@
   <!-- Standard Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
   
-  <!-- For iPhone 4 Retina display: -->
-  <link rel="apple-touch-icon-precomposed" href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/apple-touch-icon-114x114-precomposed.png">
-  
-  <!-- For iPad: -->
-  <link rel="apple-touch-icon-precomposed" href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/apple-touch-icon-72x72-precomposed.html">
-  
-  <!-- For iPhone: -->
-  <link rel="apple-touch-icon-precomposed" href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/apple-touch-icon-57x57-precomposed.png"> 
-  
-  <!-- Library - Google Font Familys -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Library -->
-    <link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/css/lib.css" rel="stylesheet">
-  
-  <!-- Custom - Common CSS -->
-  <link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/css/plugins.css" rel="stylesheet">
-  <link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/css/elements.css" rel="stylesheet">
-  <link href="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/css/rtl.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_stylesheet_directory_uri());?>/style.css">
 
   <!--[if lt IE 9]>
     <script src="js/html5/respond.min.js"></script>
