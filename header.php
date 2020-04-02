@@ -55,15 +55,11 @@
           </div>
           <div class="top-right">
             <ul>
-              <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-              <li><a id="search" href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-share-alt"></i></a></li> 
             </ul>
           </div>
-          <!-- Search Box -->
-          <div class="search-box">
-            <span><i class="icon_close"></i></span>
-            <form><input type="text" class="form-control" placeholder="Enter a keyword and press enter..." /></form>
-          </div><!-- Search Box /- -->
+           <!-- Search Box -->
+           <?php get_search_form(); ?>  
         </div><!-- Container /- -->
       </div><!-- Top Header /- -->
     </div><!-- SidePanel /- -->
