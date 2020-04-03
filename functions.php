@@ -1,36 +1,36 @@
 <?php
 
+if ( ! function_exists( 'iBlogger_setup' ) ) :
 
-     load_theme_textdomain("firezone"); 
+  function iBlogger_setup() {
+
+     load_theme_textdomain("iBlogger"); 
      add_theme_support("post-thumbnails"); 
      add_theme_support("title-tag");  
      add_theme_support("custom-logo");  
      add_theme_support("widgets");                                 
      add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'link', 'image', 'quote', 'status', 'video ' ) );
 
+  } 
+endif;
 
+add_action( 'after_setup_theme', 'iBlogger_setup' );
 
-include('inc/redux/ReduxCore/framework.php');
-include('inc/redux/sample/config.php');
-
+ 
   
-/*==============================================================================
----------------------menu rigister
-===============================================================================*/
+/**
+ menu rigister
+--------------------*/
  
         register_nav_menus( array(
         'header_menu' => esc_html__( 'Primary', 'iBlogger' ),
         'footer_menu' => esc_html__( 'Fpoter', 'iBlogger' ),
     ) );
 
-/*==============================================================================
----------------------sidebar
-===============================================================================
-*/
-function iBlogger_widgets_init() {
- 
- 
-
+/**
+sidebar 
+--------------*/
+function iBlogger_widgets_init() { 
 
     register_sidebar( array(
         'name' =>__( 'Foote text 1', 'iBlogger'),
@@ -87,20 +87,12 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
 
-
-
-
-
  
 
-
- 
-
-
-
- function iBlogger_assets(){
- 
-      
+function iBlogger_assets(){ 
+/**
+css files
+************/ 
   wp_enqueue_style( 'firezone',get_stylesheet_uri()); 
   wp_enqueue_style('apple-touch', get_template_directory_uri().'/assets/images/apple-touch-icon-114x114-precomposed.png');       
   wp_enqueue_style('apple-touch-2', get_template_directory_uri().'/assets/images/apple-touch-icon-72x72-precomposed.html');       
@@ -111,16 +103,23 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
   wp_enqueue_style('plugins', get_template_directory_uri().'/assets/css/plugins.css');   
   wp_enqueue_style('elements', get_template_directory_uri().'/assets/css/elements.css');   
   wp_enqueue_style('rtl', get_template_directory_uri().'/assets/css/rtl.css');   
-  wp_enqueue_style('style', get_template_directory_uri().'//style.css"');   
- 
- 
+  wp_enqueue_style('style', get_template_directory_uri().'//style.css"');    
 
+  /**********
+  js files
+  */ 
     wp_enqueue_script('jqueRy',get_template_directory_uri().'/assets/js/jquery-1.12.4.min.js',array('jquery'), false,true );
     wp_enqueue_script('libjs',get_template_directory_uri().'/assets/js/lib.js',null, false,true );
     wp_enqueue_script('libjs',get_template_directory_uri().'/assets/js/lib.js',null, false,true );
-    wp_enqueue_script('mainJs',get_template_directory_uri().'/assets/js/main.js',null, false,true );
+    wp_enqueue_script('mainJs',get_template_directory_uri().'/assets/js/main.js',null, false,true ); 
+} 
+add_action('wp_enqueue_scripts','iBlogger_assets');
+
+
+
+
+
  
 
-}
-
-add_action('wp_enqueue_scripts','iBlogger_assets');
+include('inc/redux/ReduxCore/framework.php');
+include('inc/redux/sample/config.php');

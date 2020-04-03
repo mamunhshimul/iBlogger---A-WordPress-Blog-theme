@@ -7,7 +7,7 @@
 
  
  <?php wp_head(); ?> 
-<head <?php body_class();?>>
+<head>
   <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,7 @@
   
 </head>
 
-<body data-offset="200" data-spy="scroll" data-target=".ownavigation">
+<body <?php body_class();?> data-offset="200" data-spy="scroll" data-target=".ownavigation">
   <!-- Loader -->
 <!--   <div id="site-loader" class="load-complete">
     <div class="loader">

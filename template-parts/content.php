@@ -12,13 +12,19 @@
                                               }?> 
  										</a>
 										<div class="entry-meta">
-											<a href="" title="Lifestyle">
-											  <?php
-                                                  foreach((get_the_category()) as $category) { 
-												       echo $category->cat_name . ' '; 
-												      } 
-												     ?>
-											 </a>
+ 								     	  <?php  
+										 	$categories = get_categories(
+										 	  array(
+													'orderby' => 'name',
+													'hide_empty' => false,
+													'parent' => 0,
+													'number' => 1, 
+										 	    ));
+
+										 		foreach ($categories as $cat) {
+												$category_link = get_category_link($cat->cat_ID);
+												echo '<a href="'.esc_url( $category_link ).'" title="'.esc_attr($cat->name).'">'.$cat->name.'</a>';
+												} ?>  
 										</div>
 									</div><!-- Entry Cover /- -->
 									<div class="entry-content">
