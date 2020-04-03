@@ -6,7 +6,7 @@
      add_theme_support("title-tag");  
      add_theme_support("custom-logo");  
      add_theme_support("widgets");                                 
- 
+     add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'link', 'image', 'quote', 'status', 'video ' ) );
 
 
 
