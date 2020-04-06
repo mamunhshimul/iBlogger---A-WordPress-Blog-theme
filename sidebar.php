@@ -1,6 +1,4 @@
-						<div class="col-md-4 col-sm-5 col-xs-12 widget-area widget-space">
-
-
+						<div class="col-md-4 col-sm-5 col-xs-12 widget-area widget-space"> 
  
 							<?php if ( is_active_sidebar( '' ) ) : ?>
 					    	    	<?php dynamic_sidebar( '' ); ?>

@@ -1,81 +1,120 @@
-<?php 
-/**
-* Template name: Custom
-**/ 
- ?> 
+ <?php get_header(); ?>
 
-<?php get_header( ); ?> 
+  <div class="main-container">  
+    <main class="site-main">      
+      <!-- Content Block -->
+      <div class="container-fluid no-left-padding no-right-padding content-block blog-single">
+        <!-- Container -->
+        <div class="container">
+          <!-- Row -->
+          <div class="row">
+            <!-- Content Area -->
+            <div class="col-md-8 col-sm-7 col-xs-12 content-area content-area-space">
 
-
-    <!-- Page Title-->
-    <div class="page-main-title">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h1 class="entry-title h2">Blog Three Col</h1>
-            <p>Duis auctor eros ac urna dictum, eget rhoncus ex fringilla. Vestibulum in ex massa. Sed accumsan tortor libero. Phasellus gravida nibh vel odio semper vitae.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Page Title-->
-    <div class="container mb-7">
-      <!-- Blog-->
-      <div class="row blog-post">
-
-      
-
-  <?php while(have_posts()) : the_post(); ?>
-
-        <div class="col-md-12 col-lg-12">
-          <article>
-            <figure class="entry-media"><img class="lozad" src="<?php the_post_thumbnail();?>">
-            </figure>
-            <div class="entry-content-wrapper">
-              <header class="entry-header">
-                <div class="entry-meta-top">
-                  <span class="entry-meta-category">
-                    <i class="far fa-folder"></i>
-                    <a href="blog-three-col.html">Photography</a>
-                  </span>
-                  <span class="entry-meta-date"> <i class="far fa-clock"></i><?php the_time('M d, Y'); ?></span>
+              <?php
+                while ( have_posts() ) : the_post(); 
+              
+                   get_template_part( 'template-parts/single-content', get_post_format() );
+              
+               endwhile; ?> 
+              
+              <!-- Comment Area -->
+              <div id="comments" class="comments-area">
+                <h2 class="comments-title">3 Comments</h2>
+                <div class="comment-block">
+                  <ol class="comment-list">
+                    <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1 parent">
+                      <div class="comment-body">
+                        <footer class="comment-meta">
+                          <div class="comment-author vcard">
+                            <img alt="img" src="assets/images/comment-1.jpg" class="avatar avatar-72 photo"/>
+                            <b class="fn">Tomas Tisdale</b>
+                          </div>
+                          <div class="comment-metadata">
+                            <a href="#">March 20, 2017</a>                    
+                          </div>
+                          <div class="reply">
+                            <a rel="nofollow" class="comment-reply-link" href="#"><i class="fa fa-reply"></i></a>
+                          </div>
+                        </footer>
+                        <div class="comment-content">
+                          <p>Efficiently reintermediate distinctive leadership through backend potentialities. Compellingly granular without standardized e-tailers.</p>
+                        </div>
+                      </div>
+                      <ol class="children">
+                        <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2 parent">
+                          <div class="comment-body">
+                            <footer class="comment-meta">
+                              <div class="comment-author vcard">
+                                <img alt="img" src="assets/images/comment-2.jpg" class="avatar avatar-72 photo"/>
+                                <b class="fn">Rachael  Kite</b>
+                              </div>
+                              <div class="comment-metadata">
+                                <a href="#">March 20, 2017</a>
+                              </div>
+                              <div class="reply">
+                                <a rel="nofollow" class="comment-reply-link" href="#"><i class="fa fa-reply"></i></a>
+                              </div>
+                            </footer>
+                            <div class="comment-content">
+                              <p>Efficiently reintermediate distinctive leadership through backend potentialities. Compellingly granular without standardized e-tailers.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="comment byuser comment-author-admin bypostauthor even thread-odd thread-alt depth-1">
+                      <div class="comment-body">
+                        <footer class="comment-meta">
+                          <div class="comment-author vcard">
+                            <img alt="img" src="assets/images/comment-3.jpg" class="avatar avatar-72 photo"/>
+                            <b class="fn">Michael  Arnold</b>
+                          </div>
+                          <div class="comment-metadata">
+                            <a href="#">March 20, 2017</a>
+                          </div>
+                          <div class="reply">
+                            <a rel="nofollow" class="comment-reply-link" href="#"><i class="fa fa-reply"></i></a>
+                          </div>
+                        </footer>
+                        <div class="comment-content">
+                          <p>Efficiently reintermediate distinctive leadership through backend potentialities. Compellingly granular without standardized e-tailers.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ol><!-- .comment-list -->
                 </div>
-                <h2 class="entry-title"><?php the_title(); ?></h2>
-              </header>
-              <div class="entry-content">
-                <p><?php the_content( ); ?></p>
-              </div>
-            </div>
-          </article>
-        </div> 
-
-  <?php endwhile; ?> 
-
-      </div>
-
-      <!-- End Blog-->
-      <div class="text-center align-items-center"><a class="btn btn-light" href="#">Load More</a></div>
-    </div> 
-
-
-
-                 <?php 
-                $gully_boy = get_the_category_by_ID($iBlogger_glo['spa_catagorY']);            
-                 $national = new WP_Query(array(
-          
-                    'post_type'       => 'post',
-                    'posts_per_page'  =>  2,
-                    'category_name'   =>  $gully_boy
-                    
-        ));
-  ?>
-
-       <?php while($national->have_posts()) : $national->the_post(); ?>
-
-          <h1> <?php the_title(); ?></h1>
-          <p><?php the_content(); ?>. . .</p>
-
-       <?php endwhile; ?>
-
-
-    <?php get_footer( ); ?> 
+                <!-- Comment Form -->
+                <div id="respond" class="comment-respond">
+                  <h2 class="comment-reply-title">leave your comment</h2>
+                  <div class="comment-form-box">
+                    <form method="post" id="commentform" class="comment-form">
+                      <p class="comment-form-author">
+                        <input id="author" name="author" placeholder="Name :" size="30" maxlength="245" required="required" type="text"/>
+                      </p>
+                      <p class="comment-form-email">
+                        <input id="email" name="email" placeholder="e-mail :" required="required" type="email"/>
+                      </p>
+                      <p class="comment-form-url">
+                        <input id="url" name="url" placeholder="website :" type="url"/>
+                      </p>
+                      <p class="comment-form-comment">
+                        <textarea id="comment" name="comment" placeholder="comment :" rows="5" required="required"></textarea>
+                      </p>
+                      <p class="form-submit">
+                        <input name="submit" class="submit" value="Post Comment" type="submit"/>
+                      </p>
+                    </form>
+                  </div>
+                </div><!-- Comment Form /- -->
+              </div><!-- Comment Area -->
+            </div><!-- Content Area /- -->
+            <!-- Widget Area -->
+            <?php get_sidebar();?>
+          </div><!-- Row /- -->
+        </div><!-- Container /- -->
+      </div><!-- Content Block /- -->
+    </main>
+  </div>
+  
+<?php get_footer();?>   
