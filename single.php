@@ -18,6 +18,13 @@
               
                endwhile; ?> 
               
+
+
+<!-- Comment Area -->
+
+
+
+
               <!-- Comment Area -->
               <div id="comments" class="comments-area">
                 <h2 class="comments-title">3 Comments</h2>
@@ -107,30 +114,12 @@
                     </form>
                   </div>
                 </div><!-- Comment Form /- -->
+                <!-- Comment Form /- -->
+
               </div><!-- Comment Area -->
             </div><!-- Content Area /- -->
             <!-- Widget Area -->
-            <?php get_sidebar();<svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<circle cx="47.5" cy="30.5" r="23.5" fill="#C4C4C4"/>
-<circle cx="47.5" cy="30.5" r="23.5" fill="url(#paint0_linear)"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dx="-1" dy="16"/>
-<feGaussianBlur stdDeviation="11.5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.471296 0 0 0 0 0.471296 0 0 0 0 0.471296 0 0 0 0.29 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear" x1="47.5" y1="7" x2="78.05" y2="38.725" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFAA5F"/>
-<stop offset="1" stop-color="#FED17D"/>
-</linearGradient>
-</defs>
-</svg>
+            <?php get_sidebar();  
 ?>
           </div><!-- Row /- -->
         </div><!-- Container /- -->
