@@ -14,7 +14,10 @@
                   <div class="post-meta">
                     <span><a href="#"><i class="fa fa-user"></i> By <?php the_author(); ?></a></span>
                     <span><a href="#"><i class="fa fa-clock-o"></i> March 20, 2017</a></span>
-                    <span><a href="#"><i class="fa fa-comment"></i> Comments</a></span>
+                    <span><a href="#"><i class="fa fa-comment"></i> <?php echo get_comments_number(); ?> Comments</a></span>
+                    <span>
+      
+                 </span>
                   </div>
 
                   <p><?php the_content();?></p>
