@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * This file represents an example of the code that themes would use to register
  * the required plugins.

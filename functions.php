@@ -123,3 +123,7 @@ add_action('wp_enqueue_scripts','iBlogger_assets');
 
 include('inc/redux/ReduxCore/framework.php');
 include('inc/redux/sample/config.php');
+/*
+tgm plugin
+---------------------------*/
+require_once get_theme_file_path('inc/tgm/tgm.php');

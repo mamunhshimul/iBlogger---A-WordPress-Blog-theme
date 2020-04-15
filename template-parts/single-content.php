@@ -24,13 +24,27 @@
  
   
                    <div class="entry-footer">
-                    <div class="tags">
-                      <span class="fa fa-tags"></span>
-                      <a href="#" title="Audio">Audio</a>
-                      <a href="#" title="Life Style">Life Style</a>
-                      <a href="#" title="Photographer">Photographer</a>
-                      <a href="#" title="Travel">Travel</a>
-                    </div>
+ 
+
+                   <div class="tags">
+                     <span class="fa fa-tags"></span>
+                     <?php  
+                      $tags = get_tags(
+                            array(
+                              'orderby' => 'name',
+                              'hide_empty' => false,
+                              'parent' => 0,
+                              'number' => 4, 
+                          ));  
+ 
+                        foreach ($tags as $cat) {
+                             $category_link = get_tag_link($cat->cat_ID);
+                             echo '<a href="'.esc_url( $category_link ).'" title="'.esc_attr($cat->name).'">'.$cat->name.'</a>';
+                            } ?>  
+                   </div>
+  
+
+
                     <ul>
                       <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
