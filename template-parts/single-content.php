@@ -65,3 +65,11 @@
                   </ul>
                 </div>
               </article>
+
+              <h1>Your image: 
+                  
+                  <?php $mamun_image = get_field('random_image'); ?>
+                  <?php $mamun_image_des = wp_get_attachment_image_src( $mamun_image,'thumbnail');    
+                   echo "<img src='". esc_url($mamun_image_des[0])."'/> "; ?>
+                   
+              </h1

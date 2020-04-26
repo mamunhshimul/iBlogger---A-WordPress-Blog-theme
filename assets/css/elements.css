@@ -409,20 +409,20 @@
 }
 
 /* - Ow-pagination */
-.ow-pagination {
+.pagination  {
 	text-align: center;
 	margin-top: 15px;
 }
-.ow-pagination ul {
+.pagination .nav-links {
 	
 	margin-bottom: 0;
 	margin-top: 0;
 }
-.ow-pagination ul li {
+.pagination .nav-links {
 	margin-left: -1px;
 	display: inline-block;
 }
-.ow-pagination ul li a {
+.pagination .nav-links a {
 	background-color: transparent;
 	border-radius: 0;
 	border: none;
@@ -436,13 +436,13 @@
 	-o-transition: all 1s ease 0s;
 	transition: all 1s ease 0s;
 }
-.ow-pagination .pagination > li:first-child > a, 
-.ow-pagination .pagination > li:first-child > span,
-.ow-pagination .pagination > li:last-child > a, 
-.ow-pagination .pagination > li:last-child > span {
+/*.navigation .nav-links > li:first-child > a, 
+.navigation .nav-links > li:first-child > span,
+.navigation .nav-links > li:last-child > a, 
+.navigation .nav-links > li:last-child > span {
 	border-radius: 0;
-}
-.ow-pagination ul li a:hover {
+}*/
+.pagination .nav-links a:hover {
 	background-color: #fff;
 	color: #282830;
 }
@@ -2352,7 +2352,7 @@ article.type-post .about-author > ul li a:hover {
 	.menu-block.navbar-fixed-top {
 		padding-top: 0;
 	}
-	.menu-block .ownavigation .navbar-header {
+	.menu-block .pagination .navbar-header {
 		text-align: center;
 		width: 100%;
 	}

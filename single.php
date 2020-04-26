@@ -20,6 +20,7 @@
               
 
 
+
 <!-- Comment Area -->
 <?php 
       if( get_theme_mod ('comments',true) ) :
@@ -44,4 +45,13 @@
     </main>
   </div>
   
+
+  <h1>camera mode: <?php the_field('Camera_model'); ?></h1>
+  <h1>loccation: <?php the_field('location'); ?></h1>
+  <h1>date: <?php the_field('date'); ?></h1> 
+  <h1>free or paid: <?php the_field('free_or_paid'); ?></h1> 
+ 
+
+
+
 <?php get_footer();?>   

@@ -31,26 +31,22 @@
 							
 					                  ?>
 
-										<nav class="ow-pagination">
-										<ul class="pagination">
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>							
-										<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul> 
-										</nav> 
-                                      <nav class="ow-pagination"> 
-			                             <?php the_posts_pagination(array(
+ 
+							/*
+							 post pagination
+							------------------------------------*/ 
+                             
+			                   <?php the_posts_pagination(array(
 											
 											'prev_text'=>'New Post',
 											'next_text'=>'Old Post',
-											'screen_reader_text'=>'deko jara',
+											'screen_reader_text'=>'Pagination',
 											'mid_size'            =>4,
 											'before_paga_number'  =>'',
 											'after_paga_number'   =>'',
 											'show_all'   =>'true/false',
-
-                                         )); ?>
-                                   </nav> 
+                                )); ?>
+                    
 							
 					       <?php else :
 							

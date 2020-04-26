@@ -127,3 +127,8 @@ include('inc/redux/sample/config.php');
 tgm plugin
 ---------------------------*/
 require_once get_theme_file_path('inc/tgm/tgm.php');
+
+
+
+ 
+ 
