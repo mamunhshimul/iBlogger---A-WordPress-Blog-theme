@@ -72,6 +72,17 @@ function iBlogger_widgets_init() {
         'after_title' => '</h3>',
     ) );
 
+     register_sidebar( array(
+        'name' =>__( 'Fooeter bottom', 'iBlogger'),
+        'id' => 'Fooeterbottom',
+        'description' => __( 'Update your footer title', 'iBlogger' ),
+        'before_widget' => '<aside id="%1$s" class="widget widget_flickr">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+   
+
   
 
 }
