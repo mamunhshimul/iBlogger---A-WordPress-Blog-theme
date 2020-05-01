@@ -11,15 +11,7 @@
   <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-  <title>Home - Hoary</title>
-
-  <!-- Standard Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
   
 
   <!--[if lt IE 9]>
@@ -96,18 +88,18 @@
 
 
                     <?php 
-                      $iBlober_menu = array(
+                      $iBlober_mainMenu = array(
                          'theme_location'  => 'header_menu',
                          'container'       => 'ul',
                          'container_class' => 'nav navbar-nav',   
                          'container_id'    => false,  
                          'menu_class'      => 'nav navbar-nav',  
                          'menu_id'         => 'ole baba',   
-                         'depth'         => '3', 
+                         'depth'           => '3', 
                          'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
                          'walker'          => new wp_bootstrap_navwalker() 
                         );
-                        wp_nav_menu( $iBlober_menu );
+                        wp_nav_menu( $iBlober_mainMenu );
   ?> 
 <!--             <ul class="nav navbar-nav">
               <li class="dropdown active">
