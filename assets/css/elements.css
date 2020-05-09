@@ -436,17 +436,17 @@
 	-o-transition: all 1s ease 0s;
 	transition: all 1s ease 0s;
 }
-/*.navigation .nav-links > li:first-child > a, 
-.navigation .nav-links > li:first-child > span,
-.navigation .nav-links > li:last-child > a, 
-.navigation .nav-links > li:last-child > span {
-	border-radius: 0;
-}*/
+ 
 .pagination .nav-links a:hover {
 	background-color: #fff;
 	color: #282830;
 }
-
+.page-numbers{
+	display: flex!important;
+}
+.page-numbers li{
+  padding: 5px;
+}
 /* + Shortcodes */
 /* - Content Block */
 .content-block {

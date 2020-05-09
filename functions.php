@@ -129,6 +129,25 @@ add_action('wp_enqueue_scripts','iBlogger_assets');
 
 
 
+/*
+pagination
+-----------*/
+function iBlogger_pagination(){
+
+  global $wp_query;
+  $links =  paginate_links(
+       array(
+
+           'current'  => max(1, get_query_var('paged')),
+           'total'    => $wp_query->max_num_pages,
+           'type'     => 'list',
+           'mid_size' => 4,
+       ));
+         $links = str_replace("page-numbers", "my_class", $links);
+         $links = str_replace("<ul class='my_class' ", "my_ul_class", $links);
+         echo $links;
+}
+
 
  
 

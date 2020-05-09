@@ -30,23 +30,28 @@
 							endwhile;
 							
 					                  ?>
-
- 
-							/*
-							 post pagination
-							------------------------------------*/ 
-                             
-			                   <?php the_posts_pagination(array(
+                        
+                        <?php
+			                  /*  the_posts_pagination(array(*/
 											
-											'prev_text'=>'New Post',
-											'next_text'=>'Old Post',
-											'screen_reader_text'=>'Pagination',
-											'mid_size'            =>4,
-											'before_paga_number'  =>'',
-											'after_paga_number'   =>'',
-											'show_all'   =>'true/false',
-                                )); ?>
+	  								// 		'prev_text'=>'New Post',
+											// 'next_text'=>'Old Post',
+											// 'screen_reader_text'=>'Pagination',
+											// 'mid_size'            =>4,
+											// 'before_paga_number'  =>'',
+											// 'after_paga_number'   =>'',
+											// 'show_all'   =>'false',
+                              /*  )); */  ?>
                     
+
+
+                    <?php 
+                     
+                iBlogger_pagination();
+                          
+
+
+                     ?>
 							
 					       <?php else :
 							
