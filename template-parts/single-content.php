@@ -45,31 +45,52 @@
   
 
 
-                    <ul>
-                      <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a></li>
-                      <li><a href="#" title="Skype"><i class="fa fa-skype"></i></a></li>
-                    </ul>
+ 
                   </div>
                 </div>
                 <div class="about-author">                
-                  <i><img src="assets/images/about-author.jpg" alt="Author"></i>
+                  <i><img src="<?php echo get_avatar(get_the_author_meta("ID")) ?>"></i>
+                  <?php echo get_avatar(get_the_author_meta("ID")) ?>
                   <h3><?php the_author();?></h3>
-                  <p>Efficiently reintermediate distinctive leadership through backend potentialities. Compellingly incentivize granular without standardized e-tailers.</p>
-                  <ul>
-                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Pinterest"><i class="fa fa-pinterest-p"></i></a></li>
-                    <li><a href="#" title="Skype"><i class="fa fa-skype"></i></a></li>
-                  </ul>
+                  <p><?php echo get_the_author_meta("description")?></p>
+                    <ul>
+                      <?php 
+                          $iBlogger_author_facebook = get_field('facebook', 'user_'.get_the_author_meta('ID'));
+                          $iBlogger_author_twitter = get_field('twitter', 'user_'.get_the_author_meta('ID'));
+                          $iBlogger_author_pinterest = get_field('pinterest', 'user_'.get_the_author_meta('ID'));
+                          $iBlogger_author_skype = get_field('skype', 'user_'.get_the_author_meta('ID'));
+                       ?>
+
+                       <?php if ($iBlogger_author_facebook):?>
+                             <li>
+                                <a href="<?php echo esc_url($iBlogger_author_facebook);?>" title="Facebook">
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                             </li> 
+                       <?php endif ?> 
+                       <?php if ($iBlogger_author_twitter):?> 
+                            <li>
+                                <a href="<?php echo esc_url($iBlogger_author_twitter);?>" title="Twitter">
+                                  <i class="fa fa-twitter"></i>
+                                </a>
+                             </li>
+                       <?php endif ?> 
+                       <?php if ($iBlogger_author_pinterest):?>
+                             <li>
+                                <a href="<?php echo esc_url($iBlogger_author_pinterest);?>" title="Pinterest">
+                                  <i class="fa fa-pinterest-p"></i>
+                                </a>
+                              </li>
+                       <?php endif ?> 
+                       <?php if ($iBlogger_author_skype):?>
+                             <li>
+                              <a href="<?php echo esc_url($iBlogger_author_skype);?>" title="Skype">
+                                <i class="fa fa-skype"></i>
+                              </a>
+                             </li> 
+                       <?php endif ?>
+                    </ul>
                 </div>
               </article>
 
-              <h1>Your image: 
-                  
-                  <?php $mamun_image = get_field('random_image'); ?>
-                  <?php $mamun_image_des = wp_get_attachment_image_src( $mamun_image,'thumbnail');    
-                   echo "<img src='". esc_url($mamun_image_des[0])."'/> "; ?>
-                   
-              </h1
+        

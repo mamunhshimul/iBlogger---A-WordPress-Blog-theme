@@ -22,14 +22,14 @@
 
 
 <!-- Comment Area -->
-<?php 
+      <?php 
       if( get_theme_mod ('comments',true) ) :
         // If comments are open or we have at least one comment, load up the comment template
         if ( comments_open() || '0' != get_comments_number() ) :
           comments_template();
         endif;
       endif;
- ?>
+           ?>
 
 
 
@@ -37,8 +37,7 @@
               
             </div><!-- Content Area /- -->
             <!-- Widget Area -->
-            <?php get_sidebar();  
-?>
+            <?php get_sidebar();?>
           </div><!-- Row /- -->
         </div><!-- Container /- -->
       </div><!-- Content Block /- -->
@@ -46,12 +45,13 @@
   </div>
   
 
-  <h1>camera mode: <?php the_field('Camera_model'); ?></h1>
-  <h1>loccation: <?php the_field('location'); ?></h1>
-  <h1>date: <?php the_field('date'); ?></h1> 
-  <h1>free or paid: <?php the_field('free_or_paid'); ?></h1> 
+ 
  
 
 
 
 <?php get_footer();?>   
+
+
+
+ 

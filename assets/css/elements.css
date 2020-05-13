@@ -1458,11 +1458,11 @@ article.type-post .about-author > ul li a:hover {
 	display: inline-block;
 	width: 100%;
 }
-.comment-author .avatar {
-	width: 88px;
+.comment-author .avatar { 
 	position: absolute;
 	left: 0;
 	top: 5px;
+	border-radius: 50%;
 }
 .comment-author .fn {
 	color: #282830;
