@@ -103,25 +103,24 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
 function iBlogger_assets(){ 
 /**
 css files
-************/ 
+************/  
   wp_enqueue_style( 'firezone',get_stylesheet_uri()); 
-  wp_enqueue_style('apple-touch', get_template_directory_uri().'/assets/images/apple-touch-icon-114x114-precomposed.png');       
-  wp_enqueue_style('apple-touch-2', get_template_directory_uri().'/assets/images/apple-touch-icon-72x72-precomposed.html');       
-  wp_enqueue_style('apple-touch-3', get_template_directory_uri().'/assets/images/apple-touch-icon-57x57-precomposed.png');       
+  wp_enqueue_style('apple-touch', get_template_directory_uri().'/inc/assets/images/apple-touch-icon-114x114-precomposed.png');       
+  wp_enqueue_style('apple-touch-2', get_template_directory_uri().'/inc/assets/images/apple-touch-icon-72x72-precomposed.html');       
+  wp_enqueue_style('apple-touch-3', get_template_directory_uri().'/inc/assets/images/apple-touch-icon-57x57-precomposed.png');       
   wp_enqueue_style('googleapis','//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');    
-  wp_enqueue_style('maincss', get_template_directory_uri().'/assets/css/lib.css');     
-  // wp_enqueue_style('plugins', get_template_directory_uri().'/assets/css/plugins.css');   
-  // wp_enqueue_style('elements', get_template_directory_uri().'/assets/css/elements.css');   
-  // wp_enqueue_style('rtl', get_template_directory_uri().'/assets/css/rtl.css');   
-  wp_enqueue_style('style', get_template_directory_uri().'//style.css"');    
+  wp_enqueue_style('maincss', get_template_directory_uri().'/inc/assets/css/lib.css');     
+  wp_enqueue_style('plugins', get_template_directory_uri().'/inc/assets/css/plugins.css');   
+  wp_enqueue_style('elements', get_template_directory_uri().'/inc/assets/css/elements.css');   
+  wp_enqueue_style('rtl', get_template_directory_uri().'/inc/assets/css/rtl.css');   
 
   /**********
   js files
   */ 
-    wp_enqueue_script('jqueRy',get_template_directory_uri().'/assets/js/jquery-1.12.4.min.js',array('jquery'), false,true );
-    wp_enqueue_script('libjs',get_template_directory_uri().'/assets/js/lib.js',null, false,true );
-    wp_enqueue_script('libjs',get_template_directory_uri().'/assets/js/lib.js',null, false,true );
-    wp_enqueue_script('mainJs',get_template_directory_uri().'/assets/js/main.js',null, false,true ); 
+    wp_enqueue_script('jqueRy',get_template_directory_uri().'/inc/assets/js/jquery-1.12.4.min.js',array('jquery'), false,true );
+    wp_enqueue_script('libjs',get_template_directory_uri().'/inc/assets/js/lib.js',null, false,true );
+    wp_enqueue_script('libjs',get_template_directory_uri().'/inc/assets/js/lib.js',null, false,true );
+    wp_enqueue_script('mainJs',get_template_directory_uri().'/inc/assets/js/main.js',null, false,true ); 
 } 
 add_action('wp_enqueue_scripts','iBlogger_assets');
 

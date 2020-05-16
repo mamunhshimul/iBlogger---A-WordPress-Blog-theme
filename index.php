@@ -45,13 +45,8 @@
                     
 
 
-                    <?php 
-                     
-                iBlogger_pagination();
-                          
-
-
-                     ?>
+                    <?php  
+                    iBlogger_pagination(); ?>
 							
 					       <?php else :
 							
