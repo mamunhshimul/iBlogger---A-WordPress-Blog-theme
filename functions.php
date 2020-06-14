@@ -101,4 +101,7 @@ require_once get_theme_file_path('inc/tgm/tgm.php');
 
 
  
- 
+ function copyright_notice() {
+   echo "Copyright All Rights Reserved";
+}
+add_action('iBlogger_footer_text','copyright_notice');
