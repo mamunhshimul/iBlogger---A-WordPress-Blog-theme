@@ -1,0 +1,63 @@
+body {
+  color: #333;
+}
+
+a {
+  /* color: #3f5ee4; */
+}
+a:hover {
+  color: #48bb8b !important;
+}
+
+input,
+textarea {
+  border: 1px solid #d4d4d4;
+}
+
+button,
+input[type=submit] {
+  border: 1px solid #48bb8b;
+  background-color: #48bb8b;
+}
+
+
+main {
+  margin-bottom: 35px;
+}
+
+/*-- colors --*/
+.pri-link {
+  color: black;
+  text-decoration: none;
+}
+
+.pri-link:hover {
+  color: gray;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.fontSize-30 {
+  font-size: 30px;
+}
+
+.borderTop {
+  border-top: 1px solid #ddd;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/*-- image  sizes --*/
+.write-thumb-lg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=reset.css.map */

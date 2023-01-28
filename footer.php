@@ -1,69 +1,71 @@
-  <!-- Footer Main -->
-  <footer id="footer-main" class="container-fluid no-left-padding no-right-padding footer-main">
-    <!-- Top Footer -->
-    <div class="container-fluid no-left-padding no-right-padding top-footer">
-      <!-- Container -->
-      <div class="container">
-        <div class="back-to-top">
-          <a href="#" id="back-to-top" title="Back To Top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <!-- Row -->
-        <div class="row">
-          <!-- Widget About -->
-          <div class="col-md-3 col-sm-6 col-xs-6">
-           
-              <?php if ( is_active_sidebar( 'foote-text-1' ) ) : ?>
-                      <?php dynamic_sidebar( 'foote-text-1' ); ?>
-              <?php endif; ?> 
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WriterPro
+ */
+?>
 
-          </div>
-          <!-- Widget About -->
-          <div class="col-md-3 col-sm-6 col-xs-6">  
-              <?php if ( is_active_sidebar( 'foote-text-2' ) ) : ?>
-                      <?php dynamic_sidebar( 'foote-text-2' ); ?>
-              <?php endif; ?> 
-          </div>
-          <!-- Widget About -->
-          <div class="col-md-3 col-sm-6 col-xs-6"> 
-              <?php if ( is_active_sidebar( 'foote-text-3' ) ) : ?>
-                   <?php dynamic_sidebar( 'foote-text-3' ); ?>   
-              <?php endif; ?> 
-          </div>
-          <!-- Widget About -->
-          <div class="col-md-3 col-sm-6 col-xs-6"> 
-              <?php if ( is_active_sidebar( 'foote-text-4' ) ) : ?>
-                      <?php dynamic_sidebar( 'foote-text-4' ); ?>
-              <?php endif; ?> 
-          </div>
- 
 
- 
-          
-        </div><!-- Row /- -->
-      </div><!-- Container /- -->
-    </div><!-- Top Footer -->
-    <!-- Bottom Footer -->
-    <div class="container-fluid bottom-footer no-left-padding no-right-padding">
-      <!-- Container -->
-      <div class="container"> 
- 
-              <?php if ( is_active_sidebar( 'Fooeterbottom' ) ) : ?>
-                      <?php dynamic_sidebar( 'Fooeterbottom' ); ?>
-              <?php endif; ?>   
- 
-      </div><!-- Container -->
-    </div><!-- Bottom Footer /- -->
-  </footer><!-- Footer Main /- -->
-  
-  <!-- JQuery v1.12.4 -->
- 
 
-  <!-- Library - Js -->
- 
- 
-  
+<footer id="colophon" class="writerPro__footer">
 
-  <?php wp_footer(); ?>
+ <div class="container">
+ 	<div class="row">
+ 		<div class="col-md-4">
+ 			<div class="footer-widget-grid">
+ 				<?php
+                 if (is_active_sidebar('footer-widget-1')) {
+   	                 dynamic_sidebar('footer-widget-1');
+                    }
+                   ?>
+ 			</div>
+ 		</div>
+ 		<div class="col-md-4">
+ 			<div class="footer-widget-grid">
+ 				<?php
+                 if (is_active_sidebar('footer-widget-2')) {
+   	                 dynamic_sidebar('footer-widget-2');
+                    }
+                   ?>
+ 			</div>
+ 		</div>
+ 		<div class="col-md-4">
+ 			<div class="footer-widget-grid">
+ 				<?php
+                 if (is_active_sidebar('footer-widget-2')) {
+   	                 dynamic_sidebar('footer-widget-2');
+                    }
+                   ?>
+ 			</div>
+ 		</div>
+ 	</div>
+     <div class="writer-footer-bottom">
+         <?php global $writerop;
+         echo $writerop['footer_cope_right'];
+         ?>
+     </div>
+ </div>
+
+</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+
+
+
+
+
+
+
+
+
+<?php wp_footer(); ?>
+
 </body>
-
- </html>
+</html>

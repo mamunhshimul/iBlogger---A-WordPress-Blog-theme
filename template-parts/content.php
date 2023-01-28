@@ -1,46 +1,49 @@
-							<div class="blog-onecolumn col-xs-12">
-								<!-- Type Post -->
-								<div class="type-post">
-									<!-- Entry Cover -->
-									<div class="entry-cover">
-										<a href="<?php the_permalink();?>">   
-                                         <?php
-                                          if (has_post_thumbnail()) {    
-                                               the_post_thumbnail('', array(
-                                               'class' => 'img-fluid' 
-                                                  ));
-                                              }?> 
- 										</a>
-										<div class="entry-meta">
- 								     	  <?php  
-										 	$categories = get_categories(
-										 	  array(
-													'orderby' => 'name',
-													'hide_empty' => false,
-													'parent' => 0,
-													'number' => 1, 
-										 	    ));
+<?php
+/**
+ * Template part for displaying posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WriterPro
+ */
+?>
 
-										 		foreach ($categories as $cat) {
-												$category_link = get_category_link($cat->cat_ID);
-												echo '<a href="'.esc_url( $category_link ).'" title="'.esc_attr($cat->name).'">'.$cat->name.'</a>';
-												} ?>  
-										</div>
-									</div><!-- Entry Cover /- -->
-									<div class="entry-content">
-										<h3 class="entry-title"><a href="<?php the_permalink();?>" title="Photo of a girl in flowers"><?php the_title(); ?></a></h3>
-										<div class="post-meta">
-											<span><a href="#"><i class="fa fa-user"></i><?php the_author(); ?></a></span>
-											<span><a href="#"><i class="fa fa-clock-o"></i><?php the_time('M d, Y'); ?></a></span>
-											<span><a href="#"><i class="fa fa-comment"></i> 3</a></span>
-										</div>
-										<p><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
-										<div class="read-more">
-											<a href="<?php the_permalink();?>" title="Read More">Read More</a>
-										</div>
-									</div>
-								</div><!-- Type Post /- -->
-							</div>
+	<div class="col-md-12">
+		<div class="writer__grid-item">
 
+			<a href="<?php the_permalink(); ?>">
+			  <div class="writerPro_post"> 
+				<?php
+               if (has_post_thumbnail()) {
+                 the_post_thumbnail('post-thumbnail', ['class' => ' ', 'title' => 'Feature image']);
+                  }
+				 ?>
+			  </div>
+			</a>
 
+			<div class="writer_post-content-wrap">
+				<h3 class="writer_post_date"><?php the_time('M j, Y'); ?></h3>
+				<h2 class="writer_post-title">
+                    <a href="<?php the_permalink(); ?>">
+                    	<?php the_title();?>
+			     	</a>
+                </h2>
+				<div class="writer_post-excerpt">
+					<?php the_excerpt(); ?>
+				</div>
+				<div class="writer_post-meta-wrap">
+					<div class="row">
+						<div class="col-md-6">
+				         	<h3 class="writer_post_author">By <?php the_author(); ?></h3>
+						</div>
+						<div class="col-md-6">
+							<h3 class="writer_post_comments text-right">
+						   	 <?php comments_number();?>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
