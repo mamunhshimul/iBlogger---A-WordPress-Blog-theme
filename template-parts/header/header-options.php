@@ -5,13 +5,14 @@
 function writerPro_logo() {
 
         global $writerop;
-        if($writerop['writer-header-logo-light']['url']!='') { ?>
-            <a href="<?php echo get_site_url();?>">
-                <img src="<?php echo $writerop['writer-header-logo-light']['url']; ?>"/>
-            </a>
+        if($writerop['writer-header-logo-light'] =='') { ?>
+          <a href="<?php echo get_site_url();?>">writerPro</a>
         <?php }
         else { ?>
-             <a href="<?php echo get_site_url();?>">writerPro</a>
+           
+             <a href="<?php echo get_site_url();?>">
+                <img src="<?php echo $writerop['writer-header-logo-light']['url']; ?>"/>
+            </a>
           <?php
         }
    }

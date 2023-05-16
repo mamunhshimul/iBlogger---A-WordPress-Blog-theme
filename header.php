@@ -17,11 +17,11 @@ get_template_part("/template-parts/header/header-options");
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,7 +30,7 @@ get_template_part("/template-parts/header/header-options");
 
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'writerpro' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'writerpro'); ?></a>
 
 <header id="masthead" class="site-header">
 
@@ -49,8 +49,8 @@ get_template_part("/template-parts/header/header-options");
                   <div class="col-md-3 m-auto">
                       <div class="header-assets d-flex justify-content-end align-items-center">
                        <?php writerPro_search_option();
-                        writerPro_user_option();
-                      ?>
+                       writerPro_user_option();
+                       ?>
                       </div>
                   </div>
               </div>
@@ -71,7 +71,7 @@ get_template_part("/template-parts/header/header-options");
                     </div>
                     <div class="col-md-6 header-assets d-flex justify-content-end text-right">
                             <?php writerPro_search_option();
-                                  writerPro_user_option();
+                            writerPro_user_option();
                             ?>
                     </div>
                 </div>
@@ -115,36 +115,35 @@ get_template_part("/template-parts/header/header-options");
 
     <?php
 
-    if ($writerop['header-layout-option-1'] == "1" ){
+    if ($writerop['header-layout-option-1'] == "1") {
         echo '<style>.h-type-normal{display: block;}</style>';
-    }
-    elseif ($writerop['header-layout-option-1'] == "2"){
+    } elseif ($writerop['header-layout-option-1'] == "2") {
         echo '<style>.h-type-logo-center{display: block;}</style>';
     }
-//    elseif ($writerop['header-layout-option-1'] == "3"){
+    //    elseif ($writerop['header-layout-option-1'] == "3"){
 //        echo "3";
 //    }
 //    elseif ($writerop['header-layout-option-1'] == "4"){
 //        echo "4";
 //    }
-    else{
+    else {
         echo "defult!";
     }
 
-//    header width
-    if ( $writerop['header-fluid-top'] == "1" ){ ?>
-    <script>
-        // var siteHeader = document.querySelector('#masthead .container');
-        // siteHeader.classList.add('newClass');
-        var siteHeader, i;
-        siteHeader = document.querySelectorAll(".writerPro_header .container");
-        for (i = 0; i < siteHeader.length; i++) {
-            siteHeader[i].classList.replace('container','container-fluid');
-        }
-    </script>
-<?php
-}
-?>
+    //    header width
+    if ($writerop['header-fluid-top'] == "1") { ?>
+        <script>
+            // var siteHeader = document.querySelector('#masthead .container');
+            // siteHeader.classList.add('newClass');
+            var siteHeader, i;
+            siteHeader = document.querySelectorAll(".writerPro_header .container");
+            for (i = 0; i <script siteHeader.length; i++) {
+                siteHeader[i].classList.replace('container','container-fluid');
+            }
+        </script>
+    <?php
+    }
+    ?>
 
 
 
@@ -191,14 +190,15 @@ get_template_part("/template-parts/header/header-options");
 
 
 
-    function console_log($output, $with_script_tags = true) {
-        $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
-            ');';
-        if ($with_script_tags) {
-            $js_code = '<script>' . $js_code . '</script>';
-        }
-        echo $js_code;
-    } ?>
+function console_log($output, $with_script_tags = true)
+{
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+        ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+} ?>
 
 
 
@@ -227,10 +227,10 @@ get_template_part("/template-parts/header/header-options");
 
     <style>
         body{
-            font-size: <?php  echo $writerop['writer__body_typo']['font-size'] ?>;
-            line-height: <?php  echo $writerop['writer__body_typo']['line-height'] ?>;
-            font-weight: <?php  echo $writerop['writer__body_typo']['font-weight'] ?>;
-            font-family: "<?php  echo $writerop['writer__body_typo']['font-family'] ?>", sans-serif;
-            color: <?php  echo $writerop['writer__body_typo']['color'] ?>;
+            font-size: <?php echo $writerop['writer__body_typo']['font-size'] ?>;
+            line-height: <?php echo $writerop['writer__body_typo']['line-height'] ?>;
+            font-weight: <?php echo $writerop['writer__body_typo']['font-weight'] ?>;
+            font-family: "<?php echo $writerop['writer__body_typo']['font-family'] ?>", sans-serif;
+            color: <?php echo $writerop['writer__body_typo']['color'] ?>;
         }
     </style>

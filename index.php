@@ -99,8 +99,6 @@ global $writerop;
      public $data2;
      public $data3;
      
-     
-
 
      public function __construct() {
       global $GLOBALS;
@@ -175,11 +173,6 @@ global $writerop;
 <?php get_template_part("/template-parts/options/modal"); ?>   
 
  
-
- 
-
-
-
 
 
 <?php
